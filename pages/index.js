@@ -33,7 +33,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/josh-pattison/"
             target="_blank"
             rel="noreferrer"
-            className="font-Abril text-lg sm:text-lg tracking-wide text-red-600 "
+            className="font-Abril text-lg sm:text-lg tracking-wide text-red-600"
           >
             view my LinkedIn |
           </a>
@@ -41,7 +41,7 @@ export default function Home() {
             href="https://github.com/pattisoj"
             target="_blank"
             rel="noreferrer"
-            className="font-Abril text-lg sm:text-lg tracking-wide text-red-600 "
+            className="font-Abril text-lg sm:text-lg tracking-wide text-red-600"
           >
             | view my GitHub
           </a>
