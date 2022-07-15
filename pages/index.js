@@ -1,4 +1,5 @@
 import Navbar from "../components/NavBar";
+import PageNumber from "../components/PageNumber";
 
 export default function Home() {
   return (
@@ -14,14 +15,14 @@ export default function Home() {
         <p className="font-Abril text-1xl sm:text-3xl tracking-wide mb-4">
           I enjoy coding things that solve problems
         </p>
-        <p className="font-Abril text-base sm:text-base tracking-wide">
+        <p className="font-Abril text-xs sm:text-base tracking-wide">
           I love developing and producing high quality software.
         </p>
-        <p className="font-Abril text-base sm:text-base tracking-wide mb-6">
+        <p className="font-Abril text-xs sm:text-base tracking-wide mb-6">
           I am always looking to learn new things and I am currently studying
           software development at the School of Code
         </p>
-        <p className="font-Abril text-lg sm:text-lg tracking-wide mb-4">
+        <p className="font-Abril text-sm sm:text-lg tracking-wide mb-4">
           welcome to my website.
         </p>
         <span>
@@ -43,6 +44,7 @@ export default function Home() {
           </a>
         </span>
       </div>
+      <PageNumber pageNumber={1} />
     </div>
   );
 }

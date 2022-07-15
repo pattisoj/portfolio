@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar({ activePage }) {
   return (
     <nav className="bg-transparent">
-      <div className="flex justify-end mt-10 mr-10">
+      <div className="flex justify-end ml-4 mt-10 mr-10">
         {activePage === "home" ? (
           <p
             className={`font-Graduate m-2 text-red-600 underline underline-offset-2`}
@@ -13,7 +13,7 @@ export default function Navbar({ activePage }) {
         ) : (
           <Link href="/">
             <a>
-              <p className="font-Graduate m-2 relative group">
+              <p className="font-Graduate m-2 opacity-50 relative group">
                 <span className="group-hover:text-white">01 · home.</span>
                 <span className="absolute -bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                 <span className="absolute -bottom-0 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
@@ -30,7 +30,7 @@ export default function Navbar({ activePage }) {
         ) : (
           <Link href="/about">
             <a>
-              <p className="font-Graduate m-2 relative group">
+              <p className="font-Graduate m-2 opacity-50 relative group">
                 <span className="group-hover:text-white">02 · about.</span>
                 <span className="absolute -bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                 <span className="absolute -bottom-0 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
@@ -47,7 +47,7 @@ export default function Navbar({ activePage }) {
         ) : (
           <Link href="/projects">
             <a>
-              <p className="font-Graduate m-2 relative group">
+              <p className="font-Graduate m-2 opacity-50 relative group">
                 <span className="group-hover:text-white">03 · projects.</span>
                 <span className="absolute -bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                 <span className="absolute -bottom-0 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
@@ -64,7 +64,7 @@ export default function Navbar({ activePage }) {
         ) : (
           <Link href="/contact">
             <a>
-              <p className="font-Graduate m-2 relative group">
+              <p className="font-Graduate m-2 opacity-50 relative group">
                 <span className="group-hover:text-white">04 · contact.</span>
                 <span className="absolute -bottom-0 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                 <span className="absolute -bottom-0 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
