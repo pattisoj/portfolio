@@ -1,3 +1,4 @@
+import CursorTracker from "../components/CursorTracker";
 import Navbar from "../components/NavBar";
 import PageNumber from "../components/PageNumber";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="flex flex-col w-screen  h-screen bg-cover bg-right sm:bg-center bg-[url('../images/home-bg.jpg')]">
       <Navbar activePage={"home"} />
       <PageNumber pageNumber={1} />
+      <CursorTracker />
       <div className="ml-4 md:ml-44 mt-12 self-top">
         <p className="font-Abril text-base sm:text-lg tracking-wide mb-2">
           hello, my name is

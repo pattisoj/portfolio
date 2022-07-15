@@ -1,0 +1,32 @@
+import { useState, useEffect } from "react";
+
+export default function CursorTracker() {
+  const [dateTime, setDateTime] = useState("");
+  const [cursorTrackerDisplay, setCursorTrackerDisplay] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("mousemove", mousemove);
+  }, []);
+
+  function refreshTime() {
+    const dateString = new Date().toLocaleString();
+    const formattedString = dateString.replace(", ", " - ");
+    setDateTime(formattedString);
+  }
+  setInterval(refreshTime, 1000);
+
+  function mousemove(event) {
+    const cursorLocation = `${event.pageX} / ${event.pageY}`;
+    setCursorTrackerDisplay(cursorLocation);
+  }
+
+  return (
+    <div className="font-Graduate absolute text-right self-end sm:mt-[22rem] opacity-0 sm:opacity-50 text-sm mr-10">
+      <a href="mailto:joshpattison23@icloud.com">
+        <p className="hover:underline">joshpattison23@icloud.com</p>
+      </a>
+      <p>{dateTime}</p>
+      <p>{cursorTrackerDisplay}</p>
+    </div>
+  );
+}
