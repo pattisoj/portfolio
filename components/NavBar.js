@@ -6,7 +6,7 @@ export default function Navbar({ activePage }) {
       <div className="flex justify-end ml-4 mt-10 mr-10">
         {activePage === "home" ? (
           <p
-            className={`font-Graduate m-2 text-red-600 underline underline-offset-2`}
+            className={`font-Graduate m-2 opacity-70 text-red-600 underline underline-offset-2`}
           >
             01 · home.
           </p>
@@ -23,7 +23,7 @@ export default function Navbar({ activePage }) {
         )}
         {activePage === "about" ? (
           <p
-            className={`font-Graduate m-2 text-red-600 underline underline-offset-2`}
+            className={`font-Graduate m-2 opacity-70 text-red-600 underline underline-offset-2`}
           >
             02 · about.
           </p>
@@ -40,7 +40,7 @@ export default function Navbar({ activePage }) {
         )}
         {activePage === "projects" ? (
           <p
-            className={`font-Graduate m-2 text-red-600 underline underline-offset-2`}
+            className={`font-Graduate m-2 opacity-70 text-red-600 underline underline-offset-2`}
           >
             03 · projects.
           </p>
@@ -57,7 +57,7 @@ export default function Navbar({ activePage }) {
         )}
         {activePage === "contact" ? (
           <p
-            className={`font-Graduate m-2 text-red-600 underline underline-offset-2`}
+            className={`font-Graduate m-2 opacity-70 text-red-600 underline underline-offset-2`}
           >
             03 · projects.
           </p>
