@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       Abril: ["Abril Fatface"],
       Graduate: ["Graduate"],
+      Roboto: ["Roboto"],
     },
   },
   plugins: [],
