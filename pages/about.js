@@ -1,5 +1,6 @@
 import Head from "next/head";
 import CursorTracker from "../components/CursorTracker";
+import LogoBar from "../components/LogoBar";
 import NavBar from "../components/NavBar";
 import PageNumber from "../components/PageNumber";
 
@@ -12,6 +13,7 @@ export default function About() {
       <div className="flex flex-col w-screen  h-screen bg-cover bg-right sm:bg-center bg-[#cad2c5]">
         <NavBar activePage={"about"} />
         <CursorTracker />
+        <LogoBar />
         <PageNumber pageNumber={2} />
         <h1 className="font-Abril text-2xl sm:text-4xl tracking-wide mt-24 ml-14">
           The About Page is a work in progress...

@@ -2,6 +2,7 @@ import Head from "next/head";
 import NavBar from "../components/NavBar.js";
 import CursorTracker from "../components/CursorTracker.js";
 import PageNumber from "../components/PageNumber";
+import LogoBar from "../components/LogoBar.js";
 
 export default function Projects() {
   return (
@@ -12,6 +13,7 @@ export default function Projects() {
       <div className="flex flex-col w-screen  h-screen bg-cover bg-right sm:bg-center bg-[#cad2c5]">
         <NavBar activePage={"projects"} />
         <CursorTracker />
+        <LogoBar />
         <PageNumber pageNumber={3} />
         <h1 className="font-Abril text-2xl sm:text-4xl tracking-wide mt-24 ml-14">
           The Projects Page is a work in progress...
