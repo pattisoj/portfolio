@@ -6,7 +6,7 @@ import Hashnode from "../images/logo/hashnode.svg";
 
 export default function LogoBar() {
   return (
-    <div className="absolute self-end z-40 p-2 mr-8 invisible sm:visible sm:mt-44 border-red-600 transition ease-in-out duration-500 delay-300 hover:border-r-2">
+    <div className="absolute self-end z-40 p-2 mr-4 sm:mr-8 mt-[21rem] md:mt-44 border-red-600 transition ease-in-out duration-500 delay-300 hover:border-r-2">
       <div className="transition duration-300 hover:scale-150 hover:-translate-x-1.5 hover:fill-[#f8edeb]">
         <a
           href="mailto:joshpattison23@icloud.com"
