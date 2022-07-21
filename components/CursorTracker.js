@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default function CursorTracker() {
-  const [dateTime, setDateTime] = useState("");
-  const [cursorTrackerDisplay, setCursorTrackerDisplay] = useState("");
+  const [dateTime, setDateTime] = useState('"DATE" - "TIME"');
+  const [cursorTrackerDisplay, setCursorTrackerDisplay] = useState("0/0");
 
   useEffect(() => {
     window.addEventListener("mousemove", mousemove);
