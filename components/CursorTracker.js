@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 export default function CursorTracker() {
-  const [dateTime, setDateTime] = useState("");
-  const [cursorTrackerDisplay, setCursorTrackerDisplay] = useState("");
+  const [dateTime, setDateTime] = useState('"DATE" - "TIME"');
+  const [cursorTrackerDisplay, setCursorTrackerDisplay] = useState("0/0");
 
   useEffect(() => {
     window.addEventListener("mousemove", mousemove);
@@ -21,7 +21,7 @@ export default function CursorTracker() {
   }
 
   return (
-    <div className="font-Graduate absolute text-right self-end sm:mt-[22rem] opacity-0 sm:opacity-50 text-sm mr-10">
+    <div className="font-Graduate absolute text-right self-end sm:mt-[32rem] md:mt-[22rem] opacity-0 sm:opacity-50 text-sm mr-10">
       <a href="mailto:joshpattison23@icloud.com">
         <p className="hover:underline">joshpattison23@icloud.com</p>
       </a>

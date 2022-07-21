@@ -10,7 +10,7 @@ export default function Navbar({ activePage }) {
           rel="noreferrer"
           className="font-Graduate text-sm sm:text-base tracking-wide opacity-70 hover:opacity-100 self-center mr-2"
         >
-          <button className="text-sm border border-gray-800 hover:bg-gray-200 hover:bg-opacity-40 hover:shadow-xl  focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg px-1">
+          <button className="invisible sm:visible text-sm border border-gray-800 hover:bg-gray-200 hover:bg-opacity-40 hover:shadow-xl  focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg px-1">
             resume
           </button>
         </a>
