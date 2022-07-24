@@ -10,11 +10,17 @@
 
 <div align="center">
 
+![Vercel](https://vercelbadge.vercel.app/api/pattisoj/portfolio)
+
+</div>
+
+<div align="center">
+
 ![Homepage](./images/readme/homepage.png)
 
 </div>
 
-<h2 align="center">Tech stack explanation</h2>
+# Tech stack explanation
 
 For my personal portfolio I wanted to take the time to try new things. I felt it was the perfect opportunity to improve myself as a software developer in my own time away from the School of Code. For this reason I chose a brand new framework, a new deployment tool and a CSS library.
 <br />
@@ -28,11 +34,18 @@ I chose Vercel for two main reasons. Much simpler than choosing a framework I ch
 I didn't want to stop with just a new framework and a new method of deployment. So I chose to use a CSS library. We had used UI libraries for react at the bootcamp before and I could see possible pros and cons. One con specifically was the rigidity of them. So, my thought was that a CSS library might offer some more flexibility whilst bringing some of the pros of UI/component library. I chose Tailwind as I had researched it before and it paired well with next.js.
 <br/>
 
----
+# Inspiration/Design explanation
 
 I wanted to create a portfolio using various styles and inspirations to best show off my personality. I also want to show a range of techniques all in one place. For each page I am going to break down my inspirations and my reasoning.
 
-<h2 align="center">Homepage & Components</h2>
+<details>
+<summary>Table of contents</summary>
+
+- [Homepage and Components](#homepage-and-components) </br>
+
+</details>
+
+## Homepage and Components
 
 Both my homepage and the consistent components (_the navbar, logo-bar, page number and the date/time/cursor tracker_) all come from the same sources of inspiration. For these my inspiration comes from various software developer portfolios. This is mainly the structure of the page but also the way the text is displayed on the homepage, one example would be [Brittany Chiang's Portfolio](https://brittanychiang.com/).
 <br />
