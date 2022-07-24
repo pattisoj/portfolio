@@ -7,3 +7,9 @@
 <p align="center">
   My personal portfolio <a href="https://joshpattison.com" target="_blank">joshpattison.com</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> and deployed on <a href="https://vercel.com/" target="_blank"> Vercel</a>.
 </p>
+
+<div align="center">
+
+![Homepage]("./images/readme/homepage.png")
+
+</div>
