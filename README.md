@@ -34,6 +34,12 @@ I chose Vercel for two main reasons. Much simpler than choosing a framework I ch
 I didn't want to stop with just a new framework and a new method of deployment. So I chose to use a CSS library. We had used UI libraries for react at the bootcamp before and I could see possible pros and cons. One con specifically was the rigidity of them. So, my thought was that a CSS library might offer some more flexibility whilst bringing some of the pros of UI/component library. I chose Tailwind as I had researched it before and it paired well with next.js.
 <br/>
 
+
+## Testing
+I wanted to follow best practise with this portfolio. I wanted to ensure it was tested like any good bit of code should be. 
+I chose cypress testing for this project as I felt it most appropriate to test a succesful user experience. My portfolio serves as a connection between me and the public eye and I wanted to make sure that experience was well tested, secure, and wasn't broken at any point!
+
+
 # Inspiration/Design explanation
 
 I wanted to create a portfolio using various styles and inspirations to best show off my personality. I also want to show a range of techniques all in one place. For each page I am going to break down my inspirations and my reasoning.
