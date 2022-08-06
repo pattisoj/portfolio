@@ -40,7 +40,11 @@ export default function LogoBar() {
         </a>
       </div>
       <div className="transition duration-300 hover:scale-150 hover:-translate-x-1.5 hover:fill-[#f8edeb]">
-        <a href="" target="_blank" rel="noreferrer">
+        <a
+          href="https://pattisoj.hashnode.dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Hashnode className="w-5 h-5" />
         </a>
       </div>
