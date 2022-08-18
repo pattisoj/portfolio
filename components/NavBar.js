@@ -5,9 +5,9 @@ export default function Navbar({ activePage }) {
     <nav className="bg-transparent">
       <div className="flex justify-end ml-4 mt-10 mr-10">
         <a
-          href="https://www.linkedin.com/in/josh-pattison/"
+          href="/josh-pattison-cv.pdf"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="font-Graduate text-sm sm:text-base tracking-wide opacity-70 hover:opacity-100 self-center mr-2"
         >
           <button className="invisible sm:visible text-sm border border-gray-800 hover:bg-gray-200 hover:bg-opacity-40 hover:shadow-xl  focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg px-1">
