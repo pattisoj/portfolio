@@ -1,8 +1,43 @@
 .about-page-container{
     height: 100vh;
     width: 100vw;
-    /* background-image: url(); */
-    background-color: #cad2c5;
+    background-color: #d1cdb7;
+    -webkit-background-size: 0.3rem 0.3rem;
+    -moz-background-size: 0.3rem 0.3rem;
+    background-size: 0.3rem 0.3rem;
+    background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: -moz-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -moz-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: -o-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -o-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: -ms-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -ms-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: linear-gradient(to right, #ccc8b1 1px, rgba(204,200,177,0) 1px), linear-gradient(to bottom, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    color: #454138;
     display: flex;
     flex-direction: column;
+}
+
+.about-title{
+    margin: 0;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0 #bab5a1;
+}
+
+.about-info {
+    margin: 0 2rem 0 2rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    border: 0.1rem solid #bab5a1;
+    display: flex;
+}
+
+.about-options{
+    border: 1px solid black;
+    width: 20vw;
+    padding: 0.5rem;
+    padding-bottom: 25vh;
+    display: grid;
+    margin-bottom: 1rem;
+    background-color: #dcd8c0;
 }
