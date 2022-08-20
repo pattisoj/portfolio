@@ -27,11 +27,37 @@ export default function About() {
         <fieldset className="about-info">
           <legend>Josh Pattison Information</legend>
           <div className="about-options">
-            <button onClick={() => handleClick("options")}>OPTIONS</button>
-            <button onClick={() => handleClick("profile")}>PROFILE</button>
-            <button onClick={() => handleClick("biography")}>BIOGRAPHY</button>
-            <button onClick={() => handleClick("technologies")}>
-              TECHNOLOGIES
+            <button
+              className={`about-option-button ${
+                "options" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("options")}
+            >
+              Options.
+            </button>
+            <button
+              className={`about-option-button ${
+                "profile" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("profile")}
+            >
+              Profile.
+            </button>
+            <button
+              className={`about-option-button ${
+                "biography" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("biography")}
+            >
+              Biography.
+            </button>
+            <button
+              className={`about-option-button ${
+                "technologies" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("technologies")}
+            >
+              Technologies.
             </button>
           </div>
           <div className="about-info-display">
