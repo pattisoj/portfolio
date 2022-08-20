@@ -65,6 +65,22 @@ export default function About() {
             ) : null}
           </div>
         </fieldset>
+        <div className="about-footer">
+          <blockquote className="about-blockquote">
+            This page was inspired by the menu screens in Nier: Automata
+            (Japanese: ニーア オートマタ). Nier: Automata is an action
+            role-playing video game developed by PlatinumGames and published by
+            Square Enix for PlayStation 4 and Microsoft Windows. The game is set
+            in the midst of a proxy war between machines created by otherworldly
+            invaders and the remnants of humanity, the story follows the battles
+            of a combat android and her companion.
+            <cite className="about-cite">
+              <a href="https://en.wikipedia.org/wiki/Nier:_Automata">
+                Wikipedia
+              </a>
+            </cite>
+          </blockquote>
+        </div>
       </div>
     </>
   );
