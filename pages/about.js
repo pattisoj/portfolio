@@ -35,10 +35,34 @@ export default function About() {
             </button>
           </div>
           <div className="about-info-display">
-            {displayedOption === "options" ? <p>options</p> : null}
-            {displayedOption === "profile" ? <p>profile</p> : null}
-            {displayedOption === "biography" ? <p>biography</p> : null}
-            {displayedOption === "technologies" ? <p>technologies</p> : null}
+            {displayedOption === "options" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>OPTIONS</legend>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "profile" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>PROFILE</legend>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "biography" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>BIOGRAPHY</legend>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "technologies" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>TECHNOLOGIES</legend>
+                </fieldset>
+              </div>
+            ) : null}
           </div>
         </fieldset>
       </div>

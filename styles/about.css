@@ -44,3 +44,18 @@
     background-color: #dcd8c0;
     box-shadow: 0.1rem 0.1rem #454138;
 }
+
+.about-info-content-container{
+    height: 48vh;
+    width: 55vw;
+    margin-left: 5vw;
+    background-color: #dcd8c0;
+    box-shadow: 0.1rem 0.1rem #454138;
+}
+
+.about-info-content{
+    height: 46vh;
+    margin: 0rem 0.75rem 0 0.75rem;
+    padding: 0.75rem;
+    border: 0.1rem solid #bab5a1;
+}
