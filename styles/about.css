@@ -59,3 +59,39 @@
     padding: 0.75rem;
     border: 0.1rem solid #bab5a1;
 }
+
+.about-footer{
+    margin: 2rem;
+    background-color: #dcd8c0;
+    box-shadow: 0.1rem 0.1rem #454138;
+}
+
+.about-blockquote {
+    margin-left: 2rem;
+    position: relative;
+    padding: 0.5rem;
+  }
+  .about-blockquote:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    bottom: 0;
+    height: 100%;
+    width: 0.3rem;
+    border: solid #bab5a1;
+    border-width: 0 0.2rem 0 0.6rem;
+  }
+  .about-cite {
+    position: relative;
+    padding-left: 2rem;
+  }
+  .about-cite:before {
+    content: '';
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #454138;
+    margin-left: -1rem;
+    top: 0.25em;
+  }
