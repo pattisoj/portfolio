@@ -25,19 +25,22 @@
 }
 
 .about-info {
+    height: 60vh;
     margin: 0 2rem 0 2rem;
     padding: 1rem;
     padding-top: 0.5rem;
     border: 0.1rem solid #bab5a1;
     display: flex;
+    align-items: center;
 }
 
 .about-options{
-    border: 1px solid black;
     width: 20vw;
     padding: 0.5rem;
-    padding-bottom: 25vh;
+    padding-bottom: 35vh;
     display: grid;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: #dcd8c0;
+    box-shadow: 0.1rem 0.1rem #454138;
 }
