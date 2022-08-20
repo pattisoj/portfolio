@@ -1,4 +1,8 @@
 import Head from "next/head";
+import Image from "next/image";
+import Flower from "../images/about/icons/nier-automata-1.jpeg";
+import Eye from "../images/about/icons/nier-automata-2.jpeg";
+import Horizon from "../images/about/icons/nier-automata-3.png";
 import { useState } from "react";
 import CursorTracker from "../components/CursorTracker";
 import LogoBar from "../components/LogoBar";
@@ -89,6 +93,11 @@ export default function About() {
                 </fieldset>
               </div>
             ) : null}
+          </div>
+          <div className="about-icons">
+            <Image alt="flower-icon" src={Flower} height={100} width={100} />
+            <Image alt="eye-icon" src={Eye} height={100} width={100} />
+            <Image alt="horizon-icon" src={Horizon} height={100} width={100} />
           </div>
         </fieldset>
         <div className="about-footer">
