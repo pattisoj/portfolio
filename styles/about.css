@@ -60,6 +60,16 @@
     border: 0.1rem solid #bab5a1;
 }
 
+.about-icons{
+    height: 46vh;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 30%;
+    z-index: 1;
+}
+
 .about-footer{
     margin: 2rem;
     background-color: #dcd8c0;
