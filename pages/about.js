@@ -10,7 +10,7 @@ import NavBar from "../components/NavBar";
 import PageNumber from "../components/PageNumber";
 
 export default function About() {
-  const [displayedOption, setDisplayedOption] = useState("options");
+  const [displayedOption, setDisplayedOption] = useState("welcome");
 
   function handleClick(option) {
     console.log(`Clicked on the ${option} button`);
@@ -33,11 +33,11 @@ export default function About() {
           <div className="about-options">
             <button
               className={`about-option-button ${
-                "options" === displayedOption ? "active" : ""
+                "welcome" === displayedOption ? "active" : ""
               }`}
-              onClick={() => handleClick("options")}
+              onClick={() => handleClick("welcome")}
             >
-              Options.
+              Welcome.
             </button>
             <button
               className={`about-option-button ${
@@ -63,12 +63,22 @@ export default function About() {
             >
               Technologies.
             </button>
+            <button
+              className={`about-option-button ${
+                "experience" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("experience")}
+            >
+              Experience.
+            </button>
           </div>
           <div className="about-info-display">
-            {displayedOption === "options" ? (
+            {displayedOption === "welcome" ? (
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
-                  <legend>OPTIONS</legend>
+                  <legend>WELCOME</legend>
+                  <h2 className="welcome-h2">Welcome to my about page.</h2>
+                  <p className="welcome-p">{`Select an option on the left to view it's contents.`}</p>
                 </fieldset>
               </div>
             ) : null}
@@ -76,6 +86,33 @@ export default function About() {
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
                   <legend>PROFILE</legend>
+                  <p>
+                    <label htmlFor="text">Name</label>
+                    <input
+                      className="profile-input"
+                      type="text"
+                      placeholder="Josh Pattison."
+                      disabled
+                    />
+                  </p>
+                  <p>
+                    <label htmlFor="text">Age</label>
+                    <input
+                      className="profile-input"
+                      type="text"
+                      placeholder="Twenty Two Years."
+                      disabled
+                    />
+                  </p>
+                  <p>
+                    <label htmlFor="text">Hobbies</label>
+                    <input
+                      className="profile-input"
+                      type="text"
+                      placeholder="Football. Formula 1. Anime."
+                      disabled
+                    />
+                  </p>
                 </fieldset>
               </div>
             ) : null}
@@ -83,6 +120,33 @@ export default function About() {
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
                   <legend>BIOGRAPHY</legend>
+                  <p>
+                    Before moving into code I earned a{" "}
+                    <ins>BSc in Psychology!</ins>
+                  </p>
+                  <br />
+                  <p>
+                    I started my coding journey by joining the{" "}
+                    <ins>
+                      <a href="https://www.schoolofcode.co.uk/">
+                        School of Code
+                      </a>
+                    </ins>{" "}
+                    a 16-week intensive bootcamp focused on{" "}
+                    <mark>full-stack development</mark> that mimics a work based
+                    environment.
+                  </p>
+                  <br />
+                  <p>
+                    I enjoy creating <ins>clean and testable code</ins> to solve
+                    problems. I have a passion for both front and back end and
+                    would love to continue exploring both in my career!
+                  </p>
+                  <br />
+                  <p>
+                    Currently I am looking for junior software development
+                    roles, <mark>contact me on the right.</mark>
+                  </p>
                 </fieldset>
               </div>
             ) : null}
@@ -90,6 +154,70 @@ export default function About() {
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
                   <legend>TECHNOLOGIES</legend>
+                  <div className="technologies-container">
+                    <dl>
+                      <dt>Languages</dt>
+                      <dd>HTML5.</dd>
+                      <dd>CSS.</dd>
+                      <dd>JavaScript.</dd>
+                      <dd>SQL.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Libraries & Frameworks</dt>
+                      <dd>Node.js.</dd>
+                      <dd>React.</dd>
+                      <dd>Express.js.</dd>
+                      <dd>TailwindCSS.</dd>
+                      <dd>Next.js.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Hosting</dt>
+                      <dd>Heroku.</dd>
+                      <dd>Netlify.</dd>
+                      <dd>AWS.</dd>
+                      <dd>Vercel.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Testing</dt>
+                      <dd>Jest.</dd>
+                      <dd>Cypress.</dd>
+                      <dd>Postman.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Databases</dt>
+                      <dd>PostgreSQL.</dd>
+                      <dd>DynamoDB.</dd>
+                    </dl>
+                  </div>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "experience" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>EXPERIENCE</legend>
+                  <mark>
+                    Full Stack Development, The School of Code - Remote. April
+                    2022 - Present.
+                  </mark>
+                  <br />
+                  <p>
+                    Focused on learning and using{" "}
+                    <ins>full stack technologies</ins> to solve real world
+                    problems in programming teams. - Worked in{" "}
+                    <ins>13 diverse teams over 16 weeks</ins>. Mainly pair
+                    programming but I also worked in a 4-person team for a
+                    weeklong project and a 5-person team for a four-week
+                    project.
+                  </p>
+                  <br />
+                  <p>
+                    <mark>Four-week project.</mark> - Used agile methodologies
+                    in a team of five to create a full-stack travel application
+                    whereby users could find unbiased information on countries
+                    in the world to better inform their destination decisions.{" "}
+                    <ins>See the projects tab for more.</ins>
+                  </p>
                 </fieldset>
               </div>
             ) : null}
