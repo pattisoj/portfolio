@@ -332,14 +332,6 @@ dd {
         font-size: .75rem;
     }
 
-    .technologies-container{
-        flex-direction: column;
-    }
-
-    .profile-content-container{
-        flex-direction: column;
-    }
-
     .about-options{
         display: flex;
         flex-direction: row;
@@ -381,5 +373,24 @@ dd {
     .about-cite::before{
         width: .25rem;
         height: .25rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .technologies-container{
+        flex-direction: column;
+    }
+
+    .profile-content-container{
+        flex-direction: column;
+    }
+
+    .about-info-content{
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .about-icons{
+        justify-content: center;
     }
   }
