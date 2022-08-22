@@ -73,7 +73,7 @@ I chose to use the styles of Neir: Automata because I recently played the game a
 The about page of any website, and in my portfolio, had to convey a lot of information and I wanted it to be styled in a clean way and for that reason the Neir: Automata styling was a clear winner!
 </br>
 </br>
-I have to give a huge thank you to [Ethan Chan aka metakirby5](https://github.com/metakirby5) for creating the [YoRHa github repository](https://github.com/metakirby5/yorha) which contains Neir: Automata css styling. Much of which I used for this about page.
+I have to give a huge thank you to [Ethan Chan (aka metakirby5)](https://github.com/metakirby5) for creating the [YoRHa github repository](https://github.com/metakirby5/yorha) which contains Neir: Automata css styling. Much of which I used for this about page.
 
 #### About Page Takeaway -
 
