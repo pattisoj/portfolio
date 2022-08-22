@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Profile from "../images/about/profile/profile-picture.png";
 import Flower from "../images/about/icons/nier-automata-1.jpeg";
 import Eye from "../images/about/icons/nier-automata-2.jpeg";
 import Horizon from "../images/about/icons/nier-automata-3.png";
@@ -86,33 +87,45 @@ export default function About() {
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
                   <legend>PROFILE</legend>
-                  <p>
-                    <label htmlFor="text">Name</label>
-                    <input
-                      className="profile-input"
-                      type="text"
-                      placeholder="Josh Pattison."
-                      disabled
-                    />
-                  </p>
-                  <p>
-                    <label htmlFor="text">Age</label>
-                    <input
-                      className="profile-input"
-                      type="text"
-                      placeholder="Twenty Two Years."
-                      disabled
-                    />
-                  </p>
-                  <p>
-                    <label htmlFor="text">Hobbies</label>
-                    <input
-                      className="profile-input"
-                      type="text"
-                      placeholder="Football. Formula 1. Anime."
-                      disabled
-                    />
-                  </p>
+                  <div className="profile-content-container">
+                    <div className="image-wrapper">
+                      <Image
+                        alt="profile head-shot"
+                        src={Profile}
+                        height={210}
+                        width={210}
+                      />
+                    </div>
+                    <div className="profile-information-container">
+                      <p>
+                        <label htmlFor="text">Name</label>
+                        <input
+                          className="profile-input"
+                          type="text"
+                          placeholder="Josh Pattison."
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        <label htmlFor="text">Age</label>
+                        <input
+                          className="profile-input"
+                          type="text"
+                          placeholder="Twenty Two Years."
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        <label htmlFor="text">Hobbies</label>
+                        <input
+                          className="profile-input"
+                          type="text"
+                          placeholder="Football. Formula 1. Anime."
+                          disabled
+                        />
+                      </p>
+                    </div>
+                  </div>
                 </fieldset>
               </div>
             ) : null}
