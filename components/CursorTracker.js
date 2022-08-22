@@ -21,7 +21,7 @@ export default function CursorTracker() {
   }
 
   return (
-    <div className="font-Graduate absolute text-right self-end sm:mt-[32rem] md:mt-[22rem] opacity-0 sm:opacity-50 text-sm mr-10 z-10">
+    <div className="font-Graduate absolute text-right self-end sm:mt-[32rem] md:mt-[22rem] opacity-0 lg:opacity-50 text-sm mr-10 z-10">
       <a href="mailto:joshpattison23@icloud.com">
         <p className="hover:underline">joshpattison23@icloud.com</p>
       </a>
