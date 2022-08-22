@@ -1,6 +1,6 @@
 .about-page-container{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: #d1cdb7;
     -webkit-background-size: 0.3rem 0.3rem;
     -moz-background-size: 0.3rem 0.3rem;
@@ -308,3 +308,78 @@ dt{
 dd {
     display: list-item;
 }
+
+@media screen and (max-width: 600px) {
+    .about-title{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    legend{
+        font-size: .75rem;
+    }
+
+    .about-info{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-info-content{
+        height: 100%;
+        overflow: scroll;
+        font-size: .75rem;
+    }
+
+    .technologies-container{
+        flex-direction: column;
+    }
+
+    .profile-content-container{
+        flex-direction: column;
+    }
+
+    .about-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: .5rem;
+        height: fit-content;
+        width: 80vw;
+        font-size: .5rem;
+        padding: .5rem;
+    }
+
+    .about-info-content-container{
+        height: 40vh;
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .about-icons{
+        display: none;
+    }
+
+    .about-footer{
+        margin: 1rem;
+    }
+
+    .about-blockquote{
+        font-size: .5rem;
+    }
+
+    .about-blockquote::before{
+        width: 1rem;
+    }
+
+    .about-cite{
+        font-size: .5rem;
+        margin-left: .1rem;
+    }
+
+    .about-cite::before{
+        width: .25rem;
+        height: .25rem;
+    }
+  }
