@@ -7,7 +7,7 @@ describe("Navigation", () => {
 
     cy.url().should("include", "/about");
 
-    cy.get("h1").should("have.text", "The About Page is a work in progress...");
+    cy.get(".about-title").should("have.text", "ABOUT");
   });
 
   it("should navigate to the projects page", () => {
