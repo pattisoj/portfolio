@@ -228,6 +228,27 @@
     background-color: #454138;
 }
 
+.profile-content-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-wrapper {
+    opacity: 60%;
+    transition: 2s;
+}
+
+.image-wrapper:hover {
+    opacity: 90%;
+}
+
+.profile-information-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+}
+
 .profile-input {
     padding: 0.5rem;
     font-size: 1em;
@@ -237,7 +258,7 @@
     -moz-appearance: none;
     appearance: none;
     background-color: #dcd8c0e3;
-    width: 50%;
+    width: 100%;
 }
 
 .welcome-h2{
