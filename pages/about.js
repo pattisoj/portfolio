@@ -1,52 +1,262 @@
 import Head from "next/head";
+import Image from "next/image";
+import Profile from "../images/about/profile/profile-picture.png";
+import Flower from "../images/about/icons/nier-automata-1.jpeg";
+import Eye from "../images/about/icons/nier-automata-2.jpeg";
+import Horizon from "../images/about/icons/nier-automata-3.png";
+import { useState } from "react";
 import CursorTracker from "../components/CursorTracker";
 import LogoBar from "../components/LogoBar";
 import NavBar from "../components/NavBar";
 import PageNumber from "../components/PageNumber";
 
 export default function About() {
+  const [displayedOption, setDisplayedOption] = useState("welcome");
+
+  function handleClick(option) {
+    console.log(`Clicked on the ${option} button`);
+    setDisplayedOption(option);
+  }
+
   return (
     <>
       <Head>
         <title>Josh Pattison</title>
       </Head>
-      <div className="flex flex-col w-screen  h-screen bg-cover bg-right sm:bg-center bg-[#cad2c5]">
+      <div className="about-page-container">
         <NavBar activePage={"about"} />
         <CursorTracker />
         <LogoBar />
         <PageNumber pageNumber={2} />
-        <h1 className="font-Abril text-2xl sm:text-4xl tracking-wide mt-24 ml-14">
-          The About Page is a work in progress...
-        </h1>
-        <br />
-        {/* Below is a Skeleton placeholder that can be removed 
-        after content is on the page */}
-        <div
-          role="status"
-          className="space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center ml-14"
-        >
-          <div className="flex justify-center items-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
-            <svg
-              className="w-12 h-12 text-gray-200"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 640 512"
+        <h1 className="about-title">ABOUT</h1>
+        <fieldset className="about-info">
+          <legend>Josh Pattison Information</legend>
+          <div className="about-options">
+            <button
+              className={`about-option-button ${
+                "welcome" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("welcome")}
             >
-              <path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z" />
-            </svg>
+              Welcome.
+            </button>
+            <button
+              className={`about-option-button ${
+                "profile" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("profile")}
+            >
+              Profile.
+            </button>
+            <button
+              className={`about-option-button ${
+                "biography" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("biography")}
+            >
+              Biography.
+            </button>
+            <button
+              className={`about-option-button ${
+                "technologies" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("technologies")}
+            >
+              Technologies.
+            </button>
+            <button
+              className={`about-option-button ${
+                "experience" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("experience")}
+            >
+              Experience.
+            </button>
           </div>
-          <div className="w-full">
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[540px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+          <div className="about-info-display">
+            {displayedOption === "welcome" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>WELCOME</legend>
+                  <h2 className="welcome-h2">Welcome to my about page.</h2>
+                  <p className="welcome-p">{`Select an option on the left to view it's contents.`}</p>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "profile" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>PROFILE</legend>
+                  <div className="profile-content-container">
+                    <div className="image-wrapper">
+                      <Image
+                        alt="profile head-shot"
+                        src={Profile}
+                        height={210}
+                        width={210}
+                      />
+                    </div>
+                    <div className="profile-information-container">
+                      <p>
+                        <label htmlFor="text">Name</label>
+                        <input
+                          className="profile-input"
+                          type="text"
+                          placeholder="Josh Pattison."
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        <label htmlFor="text">Age</label>
+                        <input
+                          className="profile-input"
+                          type="text"
+                          placeholder="Twenty Two Years."
+                          disabled
+                        />
+                      </p>
+                      <p>
+                        <label htmlFor="text">Hobbies</label>
+                        <input
+                          className="profile-input"
+                          type="text"
+                          placeholder="Football. Formula 1. Anime."
+                          disabled
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "biography" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>BIOGRAPHY</legend>
+                  <p>
+                    Before moving into code I earned a{" "}
+                    <ins>BSc in Psychology!</ins>
+                  </p>
+                  <br />
+                  <p>
+                    I started my coding journey by joining the{" "}
+                    <ins>
+                      <a href="https://www.schoolofcode.co.uk/">
+                        School of Code
+                      </a>
+                    </ins>{" "}
+                    a 16-week intensive bootcamp focused on{" "}
+                    <mark>full-stack development</mark> that mimics a work based
+                    environment.
+                  </p>
+                  <br />
+                  <p>
+                    I enjoy creating <ins>clean and testable code</ins> to solve
+                    problems. I have a passion for both front and back end and
+                    would love to continue exploring both in my career!
+                  </p>
+                  <br />
+                  <p>
+                    Currently I am looking for junior software development
+                    roles, <mark>contact me on the right.</mark>
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "technologies" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>TECHNOLOGIES</legend>
+                  <div className="technologies-container">
+                    <dl>
+                      <dt>Languages</dt>
+                      <dd>HTML5.</dd>
+                      <dd>CSS.</dd>
+                      <dd>JavaScript.</dd>
+                      <dd>SQL.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Libraries & Frameworks</dt>
+                      <dd>Node.js.</dd>
+                      <dd>React.</dd>
+                      <dd>Express.js.</dd>
+                      <dd>TailwindCSS.</dd>
+                      <dd>Next.js.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Hosting</dt>
+                      <dd>Heroku.</dd>
+                      <dd>Netlify.</dd>
+                      <dd>AWS.</dd>
+                      <dd>Vercel.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Testing</dt>
+                      <dd>Jest.</dd>
+                      <dd>Cypress.</dd>
+                      <dd>Postman.</dd>
+                    </dl>
+                    <dl>
+                      <dt>Databases</dt>
+                      <dd>PostgreSQL.</dd>
+                      <dd>DynamoDB.</dd>
+                    </dl>
+                  </div>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "experience" ? (
+              <div className="about-info-content-container">
+                <fieldset className="about-info-content">
+                  <legend>EXPERIENCE</legend>
+                  <mark>
+                    Full Stack Development, The School of Code - Remote. April
+                    2022 - Present.
+                  </mark>
+                  <br />
+                  <p>
+                    Focused on learning and using{" "}
+                    <ins>full stack technologies</ins> to solve real world
+                    problems in programming teams. - Worked in{" "}
+                    <ins>13 diverse teams over 16 weeks</ins>. Mainly pair
+                    programming but I also worked in a 4-person team for a
+                    weeklong project and a 5-person team for a four-week
+                    project.
+                  </p>
+                  <br />
+                  <p>
+                    <mark>Four-week project.</mark> - Used agile methodologies
+                    in a team of five to create a full-stack travel application
+                    whereby users could find unbiased information on countries
+                    in the world to better inform their destination decisions.{" "}
+                    <ins>See the projects tab for more.</ins>
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
           </div>
-          <span className="sr-only">Loading...</span>
+          <div className="about-icons">
+            <Image alt="flower-icon" src={Flower} height={100} width={100} />
+            <Image alt="eye-icon" src={Eye} height={100} width={100} />
+            <Image alt="horizon-icon" src={Horizon} height={100} width={100} />
+          </div>
+        </fieldset>
+        <div className="about-footer">
+          <blockquote className="about-blockquote">
+            This page was inspired by the menu screens in Nier: Automata (ニーア
+            オートマタ). Nier: Automata is an action role-playing video game
+            developed by PlatinumGames and published by Square Enix for
+            PlayStation 4 and Microsoft Windows. The game is set in the midst of
+            a proxy war between machines created by otherworldly invaders and
+            the remnants of humanity, the story follows the battles of a combat
+            android and her companion.
+            <cite className="about-cite">
+              <a href="https://en.wikipedia.org/wiki/Nier:_Automata">
+                Wikipedia
+              </a>
+            </cite>
+          </blockquote>
         </div>
-        {/* End of Skeleton */}
       </div>
     </>
   );
