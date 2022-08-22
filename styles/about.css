@@ -71,6 +71,11 @@
     justify-content: space-around;
     opacity: 30%;
     z-index: 1;
+    transition: 2s;
+}
+
+.about-icons:hover {
+    opacity: 100%;
 }
 
 .about-footer{
