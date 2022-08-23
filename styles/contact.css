@@ -3,7 +3,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: #f0eee2;
+    background-color: #dcd8c0;
 }
 
 .contact-information-container{
@@ -23,7 +23,7 @@
 }
 
 .contact-information-container:hover{
-    background-color: #efeddf;
+    background-color: #d7d3bc;
 }
 
 .contact-title{
@@ -47,9 +47,9 @@
     padding: 0.2rem 0.5rem;
     border-radius: 15px;
     text-align: center;
-    background: #e8e6d8;
-    background: linear-gradient(to left, #e8e6d8 50%, white 50%) right;
-    background-size: 200%;
+    background: #d3cfbb;
+    background: linear-gradient(to left, #d3cfbb 50%, #e8e6d8 50%) right;
+    background-size: 210%;
     transition: .5s ease-out;
 }
 .contact-p > a:hover {
