@@ -5,7 +5,6 @@ import Flower from "../images/about/icons/nier-automata-1.jpeg";
 import Eye from "../images/about/icons/nier-automata-2.jpeg";
 import Horizon from "../images/about/icons/nier-automata-3.png";
 import { useState } from "react";
-import CursorTracker from "../components/CursorTracker";
 import LogoBar from "../components/LogoBar";
 import NavBar from "../components/NavBar";
 import PageNumber from "../components/PageNumber";
@@ -25,8 +24,7 @@ export default function About() {
       </Head>
       <div className="about-page-container">
         <NavBar activePage={"about"} />
-        <CursorTracker />
-        <LogoBar />
+        <LogoBar id={"about-logo-bar"} />
         <PageNumber pageNumber={2} />
         <h1 className="about-title">ABOUT</h1>
         <fieldset className="about-info">

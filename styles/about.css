@@ -313,6 +313,18 @@ dd {
     display: list-item;
 }
 
+#about-logo-bar{
+    margin-top: 27.5vh;
+}
+
+#about-logo-bar > div{
+    margin-bottom: 3rem;
+}
+
+#about-logo-bar > div:nth-child(5){
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 600px) {
     .about-title{
         font-size: 2rem;
@@ -396,5 +408,9 @@ dd {
 
     .about-icons{
         justify-content: center;
+    }
+
+    #about-logo-bar{
+        display: none;
     }
   }
