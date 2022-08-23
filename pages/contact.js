@@ -1,8 +1,9 @@
 import Head from "next/head";
+import Image from "next/image.js";
+import Ponyo from "../images/contact/ponyo.png";
 import NavBar from "../components/NavBar.js";
 import CursorTracker from "../components/CursorTracker.js";
 import PageNumber from "../components/PageNumber";
-import LogoBar from "../components/LogoBar.js";
 
 export default function Contact() {
   return (
@@ -10,39 +11,76 @@ export default function Contact() {
       <Head>
         <title>Josh Pattison</title>
       </Head>
-      <div className="flex flex-col w-screen  h-screen bg-cover bg-right sm:bg-center bg-[#cad2c5]">
+      <div className="contact-page-container">
         <NavBar activePage={"contact"} />
-        <PageNumber pageNumber={4} />
-        <LogoBar />
-        <CursorTracker />
-        <h1 className="font-Abril text-2xl sm:text-4xl tracking-wide mt-24 ml-14">
-          The Contact Page is a work in progress...
-        </h1>
-        {/* Below is a Skeleton placeholder that can be removed 
-        after content is on the page */}
-        <div role="status" className="animate-pulse mt-10">
-          <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 max-w-[640px] mb-2.5 mx-auto"></div>
-          <div className="h-2.5 mx-auto bg-gray-300 rounded-full dark:bg-gray-700 max-w-[540px]"></div>
-          <div className="flex justify-center items-center mt-4">
-            <svg
-              className="mr-2 w-10 h-10 text-gray-200 dark:text-gray-700"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-            <div className="w-20 h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 mr-3"></div>
-            <div className="w-24 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+        <CursorTracker id={"contact"} />
+        <div className="contact-information-container">
+          <h2 className="contact-title">Where to find me</h2>
+          <div className="contact-contents-container">
+            <div className="contact-links-container">
+              <p className="contact-p">
+                You can email me here -{" "}
+                <a
+                  href="mailto:joshpattison23@icloud.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  joshpattison23@icloud.com
+                </a>
+              </p>
+              <p className="contact-p">
+                GitHub followers are the most valuable -{" "}
+                <a
+                  href="https://github.com/pattisoj"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/pattisoj
+                </a>
+              </p>
+              <p className="contact-p">
+                Oh, we should definitely connect -{" "}
+                <a
+                  href="https://www.linkedin.com/in/josh-pattison/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/in/josh-pattison
+                </a>
+              </p>
+              <p className="contact-p">
+                Keep up with my day-to-day on Twitter -{" "}
+                <a
+                  href="https://twitter.com/_pattisoj"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  twitter.com/_pattisoj
+                </a>
+              </p>
+              <p className="contact-p">
+                Once in a while I blog -{" "}
+                <a
+                  href="https://pattisoj.hashnode.dev/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  pattisoj.hashnode.dev
+                </a>
+              </p>
+            </div>
+            <div className="contact-ponyo-container">
+              <Image
+                alt="Ponyo"
+                src={Ponyo}
+                width="100%"
+                height="100%"
+                layout="responsive"
+                objectFit="contain"
+              />
+            </div>
           </div>
-          <span className="sr-only">Loading...</span>
         </div>
-        {/* End of Skeleton */}
       </div>
     </>
   );

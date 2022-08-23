@@ -36,8 +36,8 @@ I didn't want to stop with just a new framework and a new method of deployment. 
 
 ## Testing
 
-I wanted to follow best practise with this portfolio. I wanted to ensure it was tested like any good bit of code should be.
-I chose cypress testing for this project as I felt it most appropriate to test a succesful user experience. My portfolio serves as a connection between me and the public eye and I wanted to make sure that experience was well tested, secure, and wasn't broken at any point!
+I wanted to follow best practice with this portfolio. I wanted to ensure it was tested like any good bit of code should be.
+I chose cypress testing for this project as I felt it most appropriate to test a successful user experience. My portfolio serves as a connection between me and the public eye and I wanted to make sure that experience was well tested, secure, and wasn't broken at any point!
 
 # Inspiration/Design explanation
 
@@ -48,6 +48,7 @@ I wanted to create a portfolio using various styles and inspirations to best sho
 
 - [Homepage and Components](#homepage-and-components) </br>
 - [About Page](#about-page) </br>
+- [Contact Page](#contact-page) </br>
 
 </details>
 
@@ -78,3 +79,13 @@ I have to give a huge thank you to [Ethan Chan (aka metakirby5)](https://github.
 #### About Page Takeaway -
 
 After returning to 'normal' CSS and not using Tailwind I have a further appreciation for Tailwind's quick implementation but also the control and how much cleaner the HTML looks using plain old CSS! I also didn't enjoy my initial experience with next/image but it is something I have gotten used to after using it multiple times in this page.
+
+## Contact Page
+
+My aim with the contact page was to make it simplistic. I wanted the user to see the links to give them to other places and not have their attention drawn away from it too much.
+
+I really enjoy anime as a whole and felt that the art from [Studio Ghibli](http://ghiblicollection.com/) was a perfect fit for this simple style. With this page being so simple I wanted to add some nice animations that were clean and subtle. This was my favourite part of this page; tinkering with subtle details!
+
+#### Contact Page Takeaway -
+
+Simple is a fun challenge. When deciding to do a 'simple' page it can seem as if it will be quick and easy. However, I found great pleasure in taking my time with this page a focusing in on small details and using the subtleties to make the page seem complete and not empty! I hope this is felt from a user's perspective.
