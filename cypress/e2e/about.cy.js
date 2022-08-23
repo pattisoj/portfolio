@@ -1,5 +1,3 @@
-const { interpolateAs } = require("next/dist/shared/lib/router/router");
-
 describe("About Page", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000/about");
