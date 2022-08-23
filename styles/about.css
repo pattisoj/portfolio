@@ -266,8 +266,13 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #dcd8c0e3;
+    background-color: #d1cdb7;
     width: 100%;
+}
+
+.profile-input::placeholder{
+    color: #454138;
+    opacity: 80;
 }
 
 .welcome-h2{

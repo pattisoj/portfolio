@@ -77,7 +77,9 @@ export default function About() {
                 <fieldset className="about-info-content">
                   <legend>WELCOME</legend>
                   <h2 className="welcome-h2">Welcome to my about page.</h2>
-                  <p className="welcome-p">{`Select an option on the left to view it's contents.`}</p>
+                  <p className="welcome-p">
+                    Select a tab in the options bar to view its contents.
+                  </p>
                 </fieldset>
               </div>
             ) : null}
@@ -156,7 +158,13 @@ export default function About() {
                   <br />
                   <p>
                     Currently I am looking for junior software development
-                    roles, <mark>contact me on the right.</mark>
+                    roles,{" "}
+                    <mark>
+                      contact me on my{" "}
+                      <a href="https://joshpattison.com/contact">
+                        contact page.
+                      </a>
+                    </mark>
                   </p>
                 </fieldset>
               </div>
@@ -227,7 +235,13 @@ export default function About() {
                     in a team of five to create a full-stack travel application
                     whereby users could find unbiased information on countries
                     in the world to better inform their destination decisions.{" "}
-                    <ins>See the projects tab for more.</ins>
+                    <ins>
+                      See the{" "}
+                      <a href="https://joshpattison.com/projects">
+                        projects page
+                      </a>{" "}
+                      for more.
+                    </ins>
                   </p>
                 </fieldset>
               </div>
