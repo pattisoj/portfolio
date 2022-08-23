@@ -3,5 +3,68 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color: #f0eee2;
+}
+
+.contact-information-container{
+    width: 65vw;
+    margin-top: 10vh;
+    margin-left: 8vw;
+    margin-right: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid #454138;
+    border-width: 0.1rem 0 0.1rem 0;
+    border-radius: 15px;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.contact-information-container:hover{
+    background-color: #efeddf;
+}
+
+.contact-title{
+    font-family: Abril;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-p{
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-p > a {
+    color: rgb(220 38 38);
+    font-weight: 300;
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+    background: #e8e6d8;
+    background: linear-gradient(to left, #e8e6d8 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.contact-p > a:hover {
+    background-position: left;
+}
+
+.contact-totoro-container{
+    width: 20vw;
+    height: 20vh;
+}
+
+.contact-contents-container{
+    display: flex;
+}
+
+#contact{
+    margin-top: 8.25rem;
 }
