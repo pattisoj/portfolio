@@ -32,9 +32,6 @@ describe("Navigation", () => {
 
     cy.url().should("include", "/contact");
 
-    cy.get("h1").should(
-      "have.text",
-      "The Contact Page is a work in progress..."
-    );
+    cy.get(".contact-title").should("have.text", "Where to find me");
   });
 });
