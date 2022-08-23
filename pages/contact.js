@@ -69,7 +69,7 @@ export default function Contact() {
                 </a>
               </p>
             </div>
-            <div className="contact-totoro-container">
+            <div className="contact-ponyo-container">
               <Image
                 alt="Ponyo"
                 src={Ponyo}

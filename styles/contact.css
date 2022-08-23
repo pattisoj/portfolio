@@ -56,7 +56,7 @@
     background-position: left;
 }
 
-.contact-totoro-container{
+.contact-ponyo-container{
     width: 20vw;
     height: 20vh;
 }
@@ -67,4 +67,41 @@
 
 #contact{
     margin-top: 8.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-title{
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .contact-p{
+        font-size: 0.5rem;
+        letter-spacing: 0.05rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .contact-information-container{
+        padding-bottom: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-information-container{
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+
+    .contact-contents-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-ponyo-container{
+        margin-top: 2.5vh;
+        width: 50vw;
+        height: 30vh;
+    }
 }
