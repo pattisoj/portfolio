@@ -19,6 +19,8 @@ describe("Projects Page", () => {
       "have.text",
       `Select a tab in the options bar to view its contents.`
     );
+
+    cy.get(".about-blockquote").should("be.visible");
   });
 
   it("should show correct content on button click", () => {
