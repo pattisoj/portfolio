@@ -1,0 +1,183 @@
+.projects-page-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #d1cdb7;
+    -webkit-background-size: 0.3rem 0.3rem;
+    -moz-background-size: 0.3rem 0.3rem;
+    background-size: 0.3rem 0.3rem;
+    background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: -moz-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -moz-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: -o-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -o-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: -ms-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -ms-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    background-image: linear-gradient(to right, #ccc8b1 1px, rgba(204,200,177,0) 1px), linear-gradient(to bottom, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+    color: #454138;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-title{
+    margin: 0;
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0 #bab5a1;
+}
+
+.projects-info {
+    height: 55vh;
+    margin: 0 2rem 0 2rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    border: 0.1rem solid #bab5a1;
+    display: flex;
+    align-items: center;
+}
+
+.projects-options{
+    width: 20vw;
+    padding: 0.5rem;
+    padding-bottom: 10vh;
+    display: grid;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: #dcd8c0;
+    box-shadow: 0.1rem 0.1rem #454138;
+}
+
+.projects-info-content-container{
+    height: 46vh;
+    width: 55vw;
+    margin-left: 5vw;
+    background-color: #dcd8c0;
+    box-shadow: 0.1rem 0.1rem #454138;
+}
+
+.projects-info-content{
+    height: 44vh;
+    margin: 0rem 0.75rem 0 0.75rem;
+    padding: 0.75rem;
+    border: 0.1rem solid #bab5a1;
+    font-family: helvetica, sans-serif;
+    letter-spacing: 0.03rem;
+    font-weight: lighter;
+    overflow: scroll;
+}
+
+.projects-icons{
+    height: 48vh;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 30%;
+    z-index: 1;
+    transition: 2s;
+}
+
+.projects-icons:hover {
+    opacity: 100%;
+}
+
+#projects-logo-bar{
+    margin-top: 27.5vh;
+}
+
+#projects-logo-bar > div{
+    margin-bottom: 3rem;
+}
+
+#projects-logo-bar > div:nth-child(5){
+    margin-bottom: 0;
+}
+
+.projects-buttons{
+    display: flex;
+}
+
+.projects-buttons > a, .languages {
+    font-size: .75rem;
+    color: rgb(220 38 38);
+    font-weight: 300;
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+    background: #d3cfbb;
+    background: linear-gradient(to left, #d3cfbb 50%, #e8e6d8 50%) right;
+    background-size: 210%;
+    transition: .5s ease-out;
+}
+.projects-buttons > a:hover, .languages:hover {
+    background-position: left;
+}
+
+@media screen and (max-width: 600px) {
+    #hidden{
+        display: none;
+    }
+
+    .projects-title{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    legend{
+        font-size: .75rem;
+    }
+
+    .projects-info{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50vh;
+    }
+
+    .projects-info-content{
+        height: 100%;
+        overflow: scroll;
+        font-size: .75rem;
+    }
+
+    .projects-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: .5rem;
+        height: fit-content;
+        width: 80vw;
+        font-size: .5rem;
+        padding: .5rem;
+    }
+
+    .projects-info-content-container{
+        height: 35vh;
+        width: 80vw;
+        margin-left: 0;
+    }
+
+    .projects-icons{
+        display: none;
+    }
+
+    .projects-buttons > a, .languages {
+        font-size: .5rem;
+        font-weight: 200;
+        padding: 0.1rem 0.25rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .projects-info-content{
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .projects-icons{
+        justify-content: center;
+    }
+
+    #projects-logo-bar{
+        display: none;
+    }
+  }

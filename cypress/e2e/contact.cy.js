@@ -34,7 +34,7 @@ describe("Contact Page", () => {
 
   it("should display correct image", () => {
     cy.get(
-      '.contact-totoro-container > [style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"] > img'
+      '.contact-ponyo-container > [style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"] > img'
     ).should("be.visible");
   });
 

@@ -1,109 +1,340 @@
 import Head from "next/head";
+import Image from "next/image.js";
+import Robots from "../images/projects/icons/nier-automata-4.png";
+import Phoenix from "../images/projects/icons/nier-automata-5.png";
+import Hand from "../images/projects/icons/nier-automata-6.jpeg";
+import { useState } from "react";
 import NavBar from "../components/NavBar.js";
-import CursorTracker from "../components/CursorTracker.js";
 import PageNumber from "../components/PageNumber";
 import LogoBar from "../components/LogoBar.js";
 
 export default function Projects() {
+  const [displayedOption, setDisplayedOption] = useState("1");
+
+  function handleClick(option) {
+    console.log(`Clicked on project number ${option}`);
+    setDisplayedOption(option);
+  }
+
   return (
     <>
       <Head>
         <title>Josh Pattison</title>
       </Head>
-      <div className="flex flex-col w-screen  h-screen bg-cover bg-right sm:bg-center bg-[#cad2c5]">
+      <div className="projects-page-container">
         <NavBar activePage={"projects"} />
-        <CursorTracker />
-        <LogoBar />
-        <PageNumber pageNumber={3} />
-        <h1 className="font-Abril text-2xl sm:text-4xl tracking-wide mt-24 ml-14">
-          The Projects Page is a work in progress...
-        </h1>
-        <br />
-        {/* Below is a Skeleton placeholder that can be removed 
-        after content is on the page */}
-        <div className="flex justify-start">
-          <div
-            role="status"
-            className="ml-14 p-4 max-w-sm rounded border border-gray-200 shadow animate-pulse md:p-6 dark:border-gray-700"
-          >
-            <div className="flex justify-center items-center mb-4 h-48 bg-gray-300 rounded dark:bg-gray-700">
-              <svg
-                className="w-12 h-12 text-gray-200 dark:text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 640 512"
-              >
-                <path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z" />
-              </svg>
-            </div>
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            <div className="flex items-center mt-4 space-x-3">
-              <svg
-                className="w-14 h-14 text-gray-200 dark:text-gray-700"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <div>
-                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
-                <div className="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-              </div>
-            </div>
-            <span className="sr-only">Loading...</span>
+        <LogoBar id={"projects-logo-bar"} />
+        <PageNumber pageNumber={3} id={"hidden"} />
+        <h1 className="projects-title">PROJECTS</h1>
+        <fieldset className="projects-info">
+          <legend>Josh Pattison Projects</legend>
+          <div className="projects-options">
+            <button
+              className={`about-option-button ${
+                "1" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("1")}
+            >
+              Welcome.
+            </button>
+            <button
+              className={`about-option-button ${
+                "2" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("2")}
+            >
+              Npm package.
+            </button>
+            <button
+              className={`about-option-button ${
+                "3" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("3")}
+            >
+              Travel application.
+            </button>
+            <button
+              className={`about-option-button ${
+                "4" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("4")}
+            >
+              Revision application.
+            </button>
+            <button
+              className={`about-option-button ${
+                "5" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("5")}
+            >
+              ...
+            </button>
           </div>
-          <div
-            role="status"
-            className="ml-14 p-4 max-w-sm rounded border border-gray-200 shadow animate-pulse md:p-6 dark:border-gray-700"
-          >
-            <div className="flex justify-center items-center mb-4 h-48 bg-gray-300 rounded dark:bg-gray-700">
-              <svg
-                className="w-12 h-12 text-gray-200 dark:text-gray-600"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 640 512"
-              >
-                <path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z" />
-              </svg>
-            </div>
-            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            <div className="flex items-center mt-4 space-x-3">
-              <svg
-                className="w-14 h-14 text-gray-200 dark:text-gray-700"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <div>
-                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
-                <div className="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+          <div className="projects-info-display">
+            {displayedOption === "1" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>WELCOME</legend>
+                  <h2 className="welcome-h2">Welcome to my projects page.</h2>
+                  <p className="welcome-p">
+                    Select a tab in the options bar to view its contents.
+                  </p>
+                </fieldset>
               </div>
-            </div>
-            <span className="sr-only">Loading...</span>
+            ) : null}
+            {displayedOption === "2" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>JPSTRING</legend>
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/jpString"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <a
+                      href="https://www.npmjs.com/package/jp-string"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View on npm.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">JavaScript. Jest.</p>
+                  </div>
+                  <br />
+                  <p>An NPM string manipulation package.</p>
+                  <br />
+                  <mark>
+                    This is an open source project that anyone can contribute
+                    to.
+                  </mark>
+                  <br />
+                  <br />
+                  <p>
+                    <ins>
+                      I created this NPM package as a learning opportunity.
+                    </ins>
+                    <br />I wanted to experience and learn about the creation of
+                    a public package.
+                    <br /> I also wanted to{" "}
+                    <mark>learn about CI/CD pipelines</mark> and this project
+                    was my first experience of it. I was able to create a GitHub
+                    workflow that runs all tests on a push or pull request and
+                    if they pass is able to automatically publish to npm if the
+                    version is updated! This facilitated the addition of a CI/CD
+                    pipeline to my final project where I additionally
+                    experimented with running ESLint on a pull request!
+                  </p>
+                  <br />
+                  <p>
+                    I chose a string manipulation package as I felt it gave me
+                    the most opportunities to keep adding functionality. I wrote
+                    all of the methods and tests in the library and all of the
+                    documentation. <br />
+                    <mark>This library is fully tested (100% coverage).</mark>
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "3" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>FINDERS KEEPERS TRAVEL APPLICATION</legend>
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/final-project-travel-app-team-jenga"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <a
+                      href="https://finders-keepers-soc.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live site.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">
+                      HTML. CSS. JavaScript. AWS. Jest. Cypress. Auth0.
+                    </p>
+                  </div>
+                  <br />
+                  <p>
+                    A Travel app for any user.
+                    <mark>Created as a team of 5 in 4 weeks.</mark> (Week 13 -
+                    16 of our 16 week bootcamp.)
+                  </p>
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    The brief for this project was <ins>brief</ins> (no pun
+                    intended!). We had to simply identify and solve a problem
+                    using technology.
+                  </p>
+                  <br />
+                  <mark>The Problems & Our Solution</mark>
+                  <p>
+                    So what problems did we find? The problem this app aimed to
+                    solve can be split into two sections:{" "}
+                  </p>
+                  <br />
+                  <ins>Too much information</ins>
+                  <p>
+                    During our consumer research, before app creation, we found
+                    that consumers were overwhelmed by all of the information
+                    out there when they were trying to book a holiday. They had
+                    way too many tabs open and felt they had to hold a lot of
+                    information between webpages to inform their decision We set
+                    out to solve this by creating an app that could store all
+                    the information you would need in one place. This is the
+                    first purpose of FINDERS KEEPERS.
+                  </p>
+                  <br />
+                  <ins> Profit influenced information</ins>
+                  <p>
+                    Whilst doing our research to source the best information for
+                    our new application we discovered a second problem; profit
+                    influenced the information websites provided. We found that
+                    websites seemed to avoid tougher topics like crime or
+                    possible negatives to travel in order to sell you their
+                    travel guides for example.
+                  </p>
+                  <br />
+                  <p>
+                    {`
+                    This gave us a unique opportunity. We didn't need to make
+                    profit. We decided to take this as a bonus and focus on showing the
+                    truthful information - unedited and unbiased. To achieve
+                    this we didn't cherry pick our information and decided to
+                    display it to users as is. Giving our users full confidence
+                    in our information.`}
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "4" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>SOC REVISION APPLICATION</legend>
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/soc-revision-app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <a
+                      href="https://team16.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live site.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">
+                      HTML. CSS. JavaScript. SQL. Jest. Cypress.
+                    </p>
+                  </div>
+                  <br />
+                  <p>
+                    A Revision app for the School of Code.{" "}
+                    <mark>Created as a team of 4 in one week</mark> (5 days).
+                  </p>
+                  <br />
+                  <p>
+                    This project was completed for week 9 of our 16 week
+                    bootcamp. I personally only had{" "}
+                    <ins>8 weeks of coding experience</ins> going into this
+                    project!
+                  </p>
+                  <br />
+                  <p>
+                    <mark>The Brief</mark>
+                  </p>
+                  <p>
+                    {` We had to use what we had learnt on
+                    the course up until that point to try and improve the lives
+                    of our fellow bootcampers. We had to consider our user's
+                    experiences and their problems. Specifically, we wanted to
+                    enhance the remote experience of a bootcamper, or find
+                    something that could help them with the vast amount of
+                    learning they're undertaking.`}
+                  </p>
+                  <br />
+                  <p>
+                    <mark>The Problem & Our Solution</mark>{" "}
+                  </p>
+                  <p>
+                    {`After sending out a
+                    survey to our fellow bootcampers we found what they wanted
+                    most was more time. As we couldn't code more hours into the
+                    day we decided to try and facilitate the best use of their
+                    time outside of bootcamp hours by creating a revision app.`}
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "5" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>COMING SOON</legend>
+                  <p>This space is empty for now...</p>
+                  <p>
+                    I am looking forward to sharing what I have been working on.
+                  </p>
+                  <br />
+                  <p>
+                    For a sneak peak of my work <mark> right now</mark> be sure
+                    to head over to my{" "}
+                    <a
+                      href="https://github.com/pattisoj"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <ins> GitHub.</ins>
+                    </a>
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
           </div>
+          <div className="projects-icons">
+            <Image alt="phoenix icon" src={Phoenix} height={100} width={100} />
+            <Image alt="robots icon" src={Robots} height={100} width={100} />
+            <Image alt="hand icon" src={Hand} height={100} width={100} />
+          </div>
+        </fieldset>
+        <div className="about-footer">
+          <blockquote className="about-blockquote">
+            {`After completing the School of Code I have continued my learning on
+            freeCodeCamp. I am currently working to my first certification
+            "Scientific Computing with Python".  I am also working on some projects with other bootcampers. To keep up to date with the progress of these projects head over to my github.`}
+            <cite className="about-cite">
+              <a href="https://en.wikipedia.org/wiki/Nier:_Automata">GitHub</a>
+            </cite>
+          </blockquote>
         </div>
-        {/* End of Skeleton */}
       </div>
     </>
   );

@@ -271,7 +271,7 @@ body {
 }
 
 .profile-input::placeholder{
-    color: #454138;
+    color: red;
     opacity: 80;
 }
 

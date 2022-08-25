@@ -17,13 +17,10 @@ describe("About Page", () => {
 
     cy.get(".welcome-p").should(
       "have.text",
-      `Select an option on the left to view it's contents.`
+      `Select a tab in the options bar to view its contents.`
     );
 
-    cy.get(".about-blockquote").should(
-      "have.text",
-      `This page was inspired by the menu screens in Nier: Automata (ニーア オートマタ). Nier: Automata is an action role-playing video game developed by PlatinumGames and published by Square Enix for PlayStation 4 and Microsoft Windows. The game is set in the midst of a proxy war between machines created by otherworldly invaders and the remnants of humanity, the story follows the battles of a combat android and her companion.Wikipedia`
-    );
+    cy.get(".about-blockquote").should("be.visible");
   });
 
   it("should show correct content on button click", () => {
