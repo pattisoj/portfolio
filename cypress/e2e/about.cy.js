@@ -17,7 +17,7 @@ describe("About Page", () => {
 
     cy.get(".welcome-p").should(
       "have.text",
-      `Select an option on the left to view it's contents.`
+      `Select a tab in the options bar to view its contents.`
     );
 
     cy.get(".about-blockquote").should(
