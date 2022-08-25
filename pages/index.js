@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import SpiritedAway from "../images/spirited-away-home.png";
 import CursorTracker from "../components/CursorTracker";
 import NavBar from "../components/NavBar";
 import PageNumber from "../components/PageNumber";
@@ -26,9 +28,10 @@ export default function Home() {
               </p>
               <p className="home-p">
                 I achieved a BSc in Psychology and recently graduated from the
-                School of Code 16 week bootcamp. I pride myself in developing
-                well tested and high quality software. I am always looking to
-                learn new things so I am currently learning Python!
+                School of Code 16 week bootcamp. <br /> I pride myself in
+                developing well tested and high quality software. <br /> I am
+                always looking to learn new things so I am currently learning
+                Python!
               </p>
               <br />
               <p>Welcome to my website.</p>
@@ -52,6 +55,16 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
+        <div className="home-image-wrapper">
+          <Image
+            alt="spirited away"
+            src={SpiritedAway}
+            width="100%"
+            height="100%"
+            layout="responsive"
+            objectFit="contain"
+          />
         </div>
       </div>
     </>
