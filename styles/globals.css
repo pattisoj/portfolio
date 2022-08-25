@@ -13,7 +13,6 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* background-color: #dcd8c0; */
     background-color: #d1cdb7;
     -webkit-background-size: 0.3rem 0.3rem;
     -moz-background-size: 0.3rem 0.3rem;
@@ -41,6 +40,7 @@ body{
     padding-bottom: 4.7rem;
     color: black;
     transition-duration: 2s;
+    z-index: 2;
 }
 
 .home-title{
@@ -93,4 +93,12 @@ body{
 .home-button-container{
     display: flex;
     margin-top: .5rem;
+}
+
+.home-image-wrapper{
+    height: 50vh;
+    width: 50vw;
+    align-self: flex-end;
+    margin-top: -60vh;
+    z-index: 1;
 }
