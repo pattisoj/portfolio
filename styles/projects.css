@@ -61,6 +61,7 @@
     font-family: helvetica, sans-serif;
     letter-spacing: 0.03rem;
     font-weight: lighter;
+    overflow: scroll;
 }
 
 .projects-icons{
@@ -90,3 +91,22 @@
     margin-bottom: 0;
 }
 
+.projects-buttons{
+    display: flex;
+}
+
+.projects-buttons > a, .languages {
+    font-size: .75rem;
+    color: rgb(220 38 38);
+    font-weight: 300;
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+    background: #d3cfbb;
+    background: linear-gradient(to left, #d3cfbb 50%, #e8e6d8 50%) right;
+    background-size: 210%;
+    transition: .5s ease-out;
+}
+.projects-buttons > a:hover, .languages:hover {
+    background-position: left;
+}
