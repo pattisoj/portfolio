@@ -47,7 +47,7 @@ I wanted to create a portfolio using various styles and inspirations to best sho
 <summary>Table of contents</summary>
 
 - [Homepage and Components](#homepage-and-components) </br>
-- [About Page](#about-page) </br>
+- [About Page and Projects Page](#about-page-and-projects-page) </br>
 - [Contact Page](#contact-page) </br>
 
 </details>
@@ -64,21 +64,21 @@ The look of the homepage comes from some of my favourite clothes designers; [Vir
 
 I used Tailwind CSS to style the components of this portfolio and also the homepage. It was very easy to use and I thought the documentation was great. However, as my code base begins to increase and I look to move on to my about page I feel I will need to make some changes. I don't like the _look_ of my code with Tailwind, it feels really bloated within the HTML. I intend to keep the Tailwind as it is on my homepage as a reminder of my learning experience.
 
-## About Page
+## About Page and Projects Page
 
-The about page was created and styled after the menu screens in Nier: Automata (ニーア オートマタ). Nier: Automata is an action role-playing video game developed by PlatinumGames and published by Square Enix for PlayStation 4 and Microsoft Windows. The game is set in the midst of a proxy war between machines created by otherworldly invaders and the remnants of humanity, the story follows the battles of a combat android and her companion. You can read more about NeiR: Automata on the [Wikipedia](https://en.wikipedia.org/wiki/Nier:_Automata) page.
+The about page and projects page were created and styled after the menu screens in Nier: Automata (ニーア オートマタ). Nier: Automata is an action role-playing video game developed by PlatinumGames and published by Square Enix for PlayStation 4 and Microsoft Windows. The game is set in the midst of a proxy war between machines created by otherworldly invaders and the remnants of humanity, the story follows the battles of a combat android and her companion. You can read more about NeiR: Automata on the [Wikipedia](https://en.wikipedia.org/wiki/Nier:_Automata) page.
 </br>
 </br>
 I chose to use the styles of Neir: Automata because I recently played the game and really enjoyed it. But beyond that I absolutely loved the aesthetic of this game and found the menus conveyed a lot of information in such a clean and artistic way, that I just had to implement it myself.
 </br>
-The about page of any website, and in my portfolio, had to convey a lot of information and I wanted it to be styled in a clean way and for that reason the Neir: Automata styling was a clear winner!
+The about page and projects page of any website, and in my portfolio, have to convey a lot of information and I wanted it to be styled in a clean way and for that reason the Neir: Automata styling was a clear winner!
 </br>
 </br>
-I have to give a huge thank you to [Ethan Chan (aka metakirby5)](https://github.com/metakirby5) for creating the [YoRHa github repository](https://github.com/metakirby5/yorha) which contains Neir: Automata css styling. Much of which I used for this about page.
+I have to give a huge thank you to [Ethan Chan (aka metakirby5)](https://github.com/metakirby5) for creating the [YoRHa github repository](https://github.com/metakirby5/yorha) which contains Neir: Automata css styling. Much of which I used for these pages.
 
-#### About Page Takeaway -
+#### About Page and Projects Page Takeaway -
 
-After returning to 'normal' CSS and not using Tailwind I have a further appreciation for Tailwind's quick implementation but also the control and how much cleaner the HTML looks using plain old CSS! I also didn't enjoy my initial experience with next/image but it is something I have gotten used to after using it multiple times in this page.
+After returning to 'normal' CSS and not using Tailwind I have a further appreciation for Tailwind's quick implementation but also the control and how much cleaner the HTML looks using plain old CSS! I also didn't enjoy my initial experience with next/image but it is something I have gotten used to after using it multiple times in these pages.
 
 ## Contact Page
 
