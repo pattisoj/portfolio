@@ -85,10 +85,10 @@ export default function Home() {
               </button>
             </a>
             <a
-              href="https://www.linkedin.com/in/josh-pattison/"
+              href="/josh-pattison-cv.pdf"
               target="_blank"
-              rel="noreferrer"
-              className="font-Graduate text-sm md:text-base tracking-wide text-red-600"
+              rel="noopener noreferrer"
+              className="font-Graduate text-sm sm:text-base tracking-wide opacity-70 hover:opacity-100 self-center mr-2"
             >
               <button
                 id="resumeCallToAction"
