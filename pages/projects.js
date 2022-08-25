@@ -24,7 +24,7 @@ export default function Projects() {
       <div className="projects-page-container">
         <NavBar activePage={"projects"} />
         <LogoBar id={"projects-logo-bar"} />
-        <PageNumber pageNumber={3} />
+        <PageNumber pageNumber={3} id={"hidden"} />
         <h1 className="projects-title">PROJECTS</h1>
         <fieldset className="projects-info">
           <legend>Josh Pattison Projects</legend>

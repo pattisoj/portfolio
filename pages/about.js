@@ -25,7 +25,7 @@ export default function About() {
       <div className="about-page-container">
         <NavBar activePage={"about"} />
         <LogoBar id={"about-logo-bar"} />
-        <PageNumber pageNumber={2} />
+        <PageNumber pageNumber={2} id={"hidden"} />
         <h1 className="about-title">ABOUT</h1>
         <fieldset className="about-info">
           <legend>Josh Pattison Information</legend>
