@@ -331,7 +331,7 @@ export default function Projects() {
             freeCodeCamp. I am currently working to my first certification
             "Scientific Computing with Python".  I am also working on some projects with other bootcampers. To keep up to date with the progress of these projects head over to my github.`}
             <cite className="about-cite">
-              <a href="https://en.wikipedia.org/wiki/Nier:_Automata">GitHub</a>
+              <a href="https://github.com/pattisoj">GitHub</a>
             </cite>
           </blockquote>
         </div>
