@@ -78,7 +78,7 @@ I have to give a huge thank you to [Ethan Chan (aka metakirby5)](https://github.
 
 #### About Page and Projects Page Takeaway -
 
-After returning to 'normal' CSS and not using Tailwind I have a further appreciation for Tailwind's quick implementation but also the control and how much cleaner the HTML looks using plain old CSS! I also didn't enjoy my initial experience with next/image but it is something I have gotten used to after using it multiple times in these pages.
+After returning to 'normal' CSS and not using Tailwind I have a further appreciation for Tailwind's quick implementation but also the control and how much cleaner the HTML looks using plain old CSS! I also didn't enjoy my initial experience with next/image but it is something I have gotten used to after using it multiple times in these pages. I was able to use this experience when building my contact page.
 
 ## Contact Page
 
