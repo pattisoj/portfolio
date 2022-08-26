@@ -43,6 +43,7 @@ export default function Home() {
                 href="https://www.linkedin.com/in/josh-pattison/"
                 target="_blank"
                 rel="noreferrer"
+                className="linkedin-button"
               >
                 LinkedIn
               </a>
@@ -50,6 +51,7 @@ export default function Home() {
                 href="https://github.com/pattisoj"
                 target="_blank"
                 rel="noreferrer"
+                className="github-button"
               >
                 GitHub
               </a>
