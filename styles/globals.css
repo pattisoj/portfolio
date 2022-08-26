@@ -165,9 +165,14 @@ body{
         width: 70vw;
         margin-top: 4rem;
     }
+
 }
 
 @media screen and (max-width: 600px) {
+    .home-title:after{
+        margin-top: 0;
+    }
+
     .resume-button{
         display: none;
     }
@@ -177,19 +182,26 @@ body{
     }
 
     .home-content-container{
-        font-size: .75rem;
-        overflow: scroll;
+        font-size: .7rem;
     }
 
     .home-title{
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        letter-spacing: 0.2rem;
     }
     
     .home-p{
-        font-size: .75rem;
+        font-size: .7rem;
     }
 
     .home-image-wrapper{
-        display: none;
+        height: 75vh;
+        width: 75vw;
+        margin-top: -4.5rem;
+        z-index: 1;
+    }
+
+    .home-information-container{
+        width:90%;
     }
 }
