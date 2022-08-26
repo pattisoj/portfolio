@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <div className="home-page-container">
         <NavBar activePage={"home"} />
-        <PageNumber pageNumber={1} />
+        <PageNumber pageNumber={1} id={"hidden"} />
         <LogoBar id={"home-logo-bar"} />
         <CursorTracker />
         <div className="home-content-container">
