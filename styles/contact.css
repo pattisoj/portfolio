@@ -102,6 +102,10 @@
     .contact-information-container{
         padding-bottom: 0.1rem;
     }
+
+    .contact-title:after{
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 930px) {

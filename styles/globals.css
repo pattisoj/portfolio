@@ -165,9 +165,14 @@ body{
         width: 70vw;
         margin-top: 4rem;
     }
+
 }
 
 @media screen and (max-width: 600px) {
+    .home-title:after{
+        margin-top: 0;
+    }
+
     .resume-button{
         display: none;
     }
