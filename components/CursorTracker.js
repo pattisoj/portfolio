@@ -24,7 +24,7 @@ export default function CursorTracker({ id }) {
 
   return (
     <div
-      className="font-Graduate absolute text-right self-end sm:mt-[32rem] md:mt-[22rem] opacity-0 lg:opacity-50 text-sm mr-10 z-10"
+      className="font-Graduate absolute text-right self-end sm:mt-[32rem] md:mt-[6rem] opacity-0 lg:opacity-50 text-sm mr-10 z-10"
       id={id}
     >
       {id === "contact" ? (

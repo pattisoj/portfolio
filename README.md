@@ -41,28 +41,41 @@ I chose cypress testing for this project as I felt it most appropriate to test a
 
 # Inspiration/Design explanation
 
-I wanted to create a portfolio using various styles and inspirations to best show off my personality. I also want to show a range of techniques all in one place. For each page I am going to break down my inspirations and my reasoning.
+I wanted to create a portfolio using various styles and inspirations to best show off my personality. I am going to be explaining my inspirations and my reasoning below.
 
 <details>
 <summary>Table of contents</summary>
 
-- [Homepage and Components](#homepage-and-components) </br>
+- [Components](#components) </br>
+- [Homepage](#homepage) <br />
 - [About Page and Projects Page](#about-page-and-projects-page) </br>
 - [Contact Page](#contact-page) </br>
 
 </details>
 
-## Homepage and Components
+## Components
 
-Both my homepage and the consistent components (_the navbar, logo-bar, page number and the date/time/cursor tracker_) all come from the same sources of inspiration. For these my inspiration comes from various software developer portfolios. This is mainly the structure of the page but also the way the text is displayed on the homepage, one example would be [Brittany Chiang's Portfolio](https://brittanychiang.com/).
+My components (_the navbar, logo-bar, page number and the date/time/cursor tracker_) come from the same sources of inspiration.
 <br />
 <br />
-The look of the homepage comes from some of my favourite clothes designers; [Virgil Abloh](https://www.off---white.com/en-gb/) (specifically OFF-WHITE for this portfolio), [Maison Margiela](https://www.maisonmargiela.com/en-gb/), [Gosha Rubchinskiy](http://gosharubchinskiy.com/) and [Issey Miyake](https://www.isseymiyake.com/en/). I wanted the page to almost feel like a piece of art, or part of an art gallery. I certainly don't know a lot about art but a do enjoy it, another source of inspiration for this page comes from art and I would say one of my favourite ways to view it is with fine art restoration heres an example: [Baumgartner Restoration](https://www.youtube.com/c/BaumgartnerRestoration).
+The look of these components comes from one of my favourite clothes designers; [Virgil Abloh](https://www.off---white.com/en-gb/) (specifically OFF-WHITE for this portfolio).
 <br />
 
-#### Homepage/Component Takeaway -
+#### Component Takeaway -
 
-I used Tailwind CSS to style the components of this portfolio and also the homepage. It was very easy to use and I thought the documentation was great. However, as my code base begins to increase and I look to move on to my about page I feel I will need to make some changes. I don't like the _look_ of my code with Tailwind, it feels really bloated within the HTML. I intend to keep the Tailwind as it is on my homepage as a reminder of my learning experience.
+I used Tailwind CSS to style the components of this portfolio. It was very easy to use and I thought the documentation was great. However, as my code base begins to increase and I look to move on to my individual pages I feel I will need to make some changes. I don't like the _look_ of my code with Tailwind, it feels really bloated within the HTML. I intend to keep the Tailwind as a reminder of my learning experience.
+
+## Homepage
+
+The inspiration for my home pages comes from various software developer portfolios. This is mainly the structure of the page and also the way the text is displayed on the homepage, one example would be [Brittany Chiang's Portfolio](https://brittanychiang.com/).
+
+I wanted to bring my love for anime/manga to my portfolio but wanted to do it in a stylized and clean way. I felt that the art from [Studio Ghibli](http://ghiblicollection.com/) was a perfect fit. I used the beautiful imagery from Spirited Away to make a home page I am happy with!
+
+This current itteration of my homepage was actually the last thing I built for this portfolio. This means much of the inspiration comes from my other pages as I tried to keep a somewhat consistent style. My original homepage was completley different and can be viewed on the [home-page-V1 branch](https://github.com/pattisoj/portfolio/tree/home-page-V1) of this repository.
+
+#### Homepage takeaway
+
+For me the homepage was all about development over a project. When I looked at my original homepage after completing the rest of my portfolio it was clear to me it needed to change. I was happy with the look of my homepage standalone but it really didn't fit with the look of the whole site so left me feeling incomplete. This page really highlighted the importance of being able to let go of code you'd written before to improve the overall page.
 
 ## About Page and Projects Page
 
@@ -84,7 +97,7 @@ After returning to 'normal' CSS and not using Tailwind I have a further apprecia
 
 My aim with the contact page was to make it simplistic. I wanted the user to see the links to give them to other places and not have their attention drawn away from it too much.
 
-I really enjoy anime as a whole and felt that the art from [Studio Ghibli](http://ghiblicollection.com/) was a perfect fit for this simple style. With this page being so simple I wanted to add some nice animations that were clean and subtle. This was my favourite part of this page; tinkering with subtle details!
+As I mentioned earlier I really enjoy anime as a whole and felt that the art from [Studio Ghibli](http://ghiblicollection.com/) was a perfect fit for this simple style. With this page being so simple I wanted to add some nice animations that were clean and subtle. This was my favourite part of this page; tinkering with subtle details!
 
 #### Contact Page Takeaway -
 

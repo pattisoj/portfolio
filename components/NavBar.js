@@ -8,11 +8,9 @@ export default function Navbar({ activePage }) {
           href="/josh-pattison-cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-Graduate text-sm sm:text-base tracking-wide opacity-70 hover:opacity-100 self-center mr-2"
+          className="resume-button"
         >
-          <button className="hidden sm:block text-sm border border-gray-800 hover:bg-gray-200 hover:bg-opacity-40 hover:shadow-xl  focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg px-1">
-            resume
-          </button>
+          resume
         </a>
         {activePage === "home" ? (
           <p
