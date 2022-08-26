@@ -65,8 +65,8 @@
     padding: 0.2rem 0.5rem;
     border-radius: 15px;
     text-align: center;
-    background: #d3cfbb;
-    background: linear-gradient(to left, #d3cfbb 50%, #e8e6d8 50%) right;
+    background: #dcd8c2;
+    background: linear-gradient(to left, #dcd8c2 50%, #e8e6d8 50%) right;
     background-size: 210%;
     transition: .5s ease-out;
 }
