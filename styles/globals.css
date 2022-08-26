@@ -74,6 +74,20 @@ body{
     margin-bottom:.25rem;
 }
 
+.resume-button{
+    font-family: Graduate;
+    color: rgb(220 38 38);
+    padding: 0.2rem 1rem;
+    margin-right: .5rem;
+    border-radius: 15px;
+    text-align: center;
+    background: #dcd8c2;
+    background: linear-gradient(to left, #dcd8c2 50%, #e8e6d8 50%) right;
+    background-size: 210%;
+    transition: .5s ease-out;
+    align-self: center;
+}
+
 .home-button-container > a {
     color: rgb(220 38 38);
     font-weight: 300;
@@ -86,7 +100,7 @@ body{
     background-size: 210%;
     transition: .5s ease-out;
 }
-.home-button-container > a:hover{
+.home-button-container > a:hover, .resume-button:hover{
     background-position: left;
 }
 
