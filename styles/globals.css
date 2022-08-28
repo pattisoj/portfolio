@@ -122,7 +122,9 @@ body{
     margin-top: .5rem;
 }
 
-
+.home-resume-button{
+    display: none;
+}
 
 @media screen and (max-height: 1500px) {
     .home-image-wrapper{
@@ -174,9 +176,17 @@ body{
         margin-top: 4rem;
     }
 
+    .home-button-container > a{
+        padding: 0.2rem 1rem;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
+    .home-resume-button{
+        display: block;
+    }
+
     .home-title:after{
         margin-top: 0;
     }
