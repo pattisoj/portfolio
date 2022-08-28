@@ -55,6 +55,14 @@ export default function Home() {
               >
                 GitHub
               </a>
+              <a
+                href="/josh-pattison-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="home-resume-button"
+              >
+                Resume
+              </a>
             </div>
           </div>
         </div>
