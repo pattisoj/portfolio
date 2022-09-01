@@ -236,11 +236,9 @@ export default function About() {
                     whereby users could find unbiased information on countries
                     in the world to better inform their destination decisions.{" "}
                     <ins>
-                      See the{" "}
                       <a href="https://joshpattison.com/projects">
-                        projects page
-                      </a>{" "}
-                      for more.
+                        See the projects page for more.
+                      </a>
                     </ins>
                   </p>
                 </fieldset>
