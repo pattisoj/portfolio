@@ -12,7 +12,7 @@ export default function Projects() {
   const [displayedOption, setDisplayedOption] = useState("1");
 
   function handleClick(option) {
-    console.log(`Clicked on project number ${option}`);
+    // console.log(`Clicked on project number ${option}`);
     setDisplayedOption(option);
   }
 
