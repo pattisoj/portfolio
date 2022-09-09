@@ -67,6 +67,14 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("5")}
             >
+              Scientific Computing Certification
+            </button>
+            <button
+              className={`about-option-button ${
+                "6" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("6")}
+            >
               ...
             </button>
           </div>
@@ -295,7 +303,7 @@ export default function Projects() {
                 </fieldset>
               </div>
             ) : null}
-            {displayedOption === "5" ? (
+            {displayedOption === "6" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
                   <legend>COMING SOON</legend>
