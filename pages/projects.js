@@ -335,6 +335,49 @@ export default function Projects() {
                     True, the answers should be displayed.
                   </p>
                   <br />
+                  <div className="projects-buttons">
+                    <a href="" target="_blank" rel="noreferrer">
+                      Project 2 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Time Calculator </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    {`Write a function named 'add_time' that takes in two required parameters and one optional parameter:`}
+                  </p>
+                  <br />
+                  <ul>
+                    <li>
+                      - a start time in the 12-hour clock format (ending in AM
+                      or PM)
+                    </li>
+                    <li>
+                      - a duration time that indicates the number of hours and
+                      minutes
+                    </li>
+                    <li>
+                      - (optional) a starting day of the week, case insensitive
+                    </li>
+                  </ul>
+                  <br />
+                  <p>
+                    {`The function should add the duration time to the start time
+                    and return the result. If the result will be the next day,
+                    it should show (next day) after the time. If the result will
+                    be more than one day later, it should show (n days later)
+                    after the time, where "n" is the number of days later. If
+                    the function is given the optional starting day of the week
+                    parameter, then the output should display the day of the
+                    week of the result. The day of the week in the output should
+                    appear after the time and before the number of days later.`}
+                  </p>
                 </fieldset>
               </div>
             ) : null}
