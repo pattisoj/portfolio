@@ -303,6 +303,41 @@ export default function Projects() {
                 </fieldset>
               </div>
             ) : null}
+            {displayedOption === "5" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>SCIENTIFIC COMPUTING CERTIFICATION</legend>
+                  <p>
+                    The following <ins>5 Projects</ins> were created to achieve
+                    the Scientific Computing with Python certification from
+                    freeCodeCamp.
+                  </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a href="" target="_blank" rel="noreferrer">
+                      Project 1 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Arithmetic Formatter </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    Create a function that receives a list of strings that are
+                    arithmetic problems and returns the problems arranged
+                    vertically and side-by-side. The function should optionally
+                    take a second argument. When the second argument is set to
+                    True, the answers should be displayed.
+                  </p>
+                  <br />
+                </fieldset>
+              </div>
+            ) : null}
             {displayedOption === "6" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
