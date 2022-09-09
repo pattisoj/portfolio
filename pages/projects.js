@@ -314,7 +314,11 @@ export default function Projects() {
                   </p>
                   <br />
                   <div className="projects-buttons">
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/pattisoj/arithmetic-formatter"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Project 1 Repository.
                     </a>
                     <br />
@@ -336,7 +340,11 @@ export default function Projects() {
                   </p>
                   <br />
                   <div className="projects-buttons">
-                    <a href="" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://github.com/pattisoj/time-calculator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Project 2 Repository.
                     </a>
                     <br />
