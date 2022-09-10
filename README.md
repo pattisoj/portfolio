@@ -20,6 +20,16 @@
 
 </div>
 
+# 🦋 Forking this repository - Please read!
+
+If you would like use this code for your own website that is okay **but, please give attribution**.
+
+I want my work to be open source, but _**plagiarism is bad**_. I am really happy with what I have created, and continue to create here so I am really happy to share it! All I ask is to not claim this work as your own.
+
+### TL;DR
+
+Yes, you can fork this repo. Please give me proper credit by linking back to [joshpattison.com](https://joshpattison.com). Thanks!
+
 # Tech stack explanation
 
 For my personal portfolio I wanted to take the time to try new things. I felt it was the perfect opportunity to improve myself as a software developer in my own time away from the School of Code. For this reason I chose a brand new framework, a new deployment tool and a CSS library.
