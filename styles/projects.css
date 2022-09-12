@@ -35,14 +35,23 @@
 }
 
 .projects-options{
+    height: 47vh;
     width: 20vw;
     padding: 0.5rem;
-    padding-bottom: 10vh;
+    overflow-y: scroll;
     display: grid;
     margin-top: 1vh;
     margin-bottom: 1vh;
     background-color: #dcd8c0;
     box-shadow: 0.1rem 0.1rem #454138;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects-options::-webkit-scrollbar {
+display: none;
 }
 
 .projects-info-content-container{
@@ -155,7 +164,6 @@
         height: fit-content;
         width: 80vw;
         font-size: .5rem;
-        padding: .5rem;
     }
 
     .projects-info-content-container{
