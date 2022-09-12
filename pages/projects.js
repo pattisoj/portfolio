@@ -67,7 +67,7 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("5")}
             >
-              Scientific Computing Certification
+              Scientific Computing Certification.
             </button>
             <button
               className={`about-option-button ${
@@ -386,6 +386,46 @@ export default function Projects() {
                     week of the result. The day of the week in the output should
                     appear after the time and before the number of days later.`}
                   </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/budget-app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 3 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Budget App </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    Create a class that contained the following methods:
+                    deposit, withdraw, get_balance, transfer and check_funds.
+                    When the budget object is printed it should display: A title
+                    line of 30 characters where the name of the category is
+                    centred in a line of * characters. A list of the items in
+                    the ledger. Each line should show the description and
+                    amount. The first 23 characters of the description should be
+                    displayed, then the amount. The amount should be right
+                    aligned, contain two decimal places, and display a maximum
+                    of 7 characters. A line displaying the category total.
+                  </p>
+                  <br />
+                  <p>
+                    Besides the Category class, create a function (outside of
+                    the class) called create_spend_chart that takes a list of
+                    categories as an argument. It should return a string that is
+                    a bar chart. The chart should show the percentage spent in
+                    each category passed in to the function.
+                  </p>
+                  <br />
                 </fieldset>
               </div>
             ) : null}
