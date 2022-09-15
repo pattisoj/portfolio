@@ -426,6 +426,46 @@ export default function Projects() {
                     each category passed in to the function.
                   </p>
                   <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/polygon-area-calculator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 4 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Polygon Area Calculator </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    In this project you will use object oriented programming to
+                    create a Rectangle class and a Square class. The Square
+                    class should be a subclass of Rectangle and inherit methods
+                    and attributes.
+                  </p>
+                  <br />
+                  <p>
+                    When a Rectangle object is created, it should be initialized
+                    with width and height attributes. The class should also
+                    contain various additional methods (such as
+                    get_amount_inside).
+                  </p>
+                  <p>
+                    When a Square object is created a single side length is
+                    passed in. The __init__ method should store the side length
+                    in both the width and height attributes from the Rectangle
+                    class. The Square class should be able to access the
+                    Rectangle class methods but should also contain a set_side
+                    method.
+                  </p>
+                  <br />
                 </fieldset>
               </div>
             ) : null}
