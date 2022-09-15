@@ -12,7 +12,7 @@ export default function Projects() {
   const [displayedOption, setDisplayedOption] = useState("1");
 
   function handleClick(option) {
-    console.log(`Clicked on project number ${option}`);
+    // console.log(`Clicked on project number ${option}`);
     setDisplayedOption(option);
   }
 
@@ -66,6 +66,14 @@ export default function Projects() {
                 "5" === displayedOption ? "active" : ""
               }`}
               onClick={() => handleClick("5")}
+            >
+              Scientific Computing Certification.
+            </button>
+            <button
+              className={`about-option-button ${
+                "6" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("6")}
             >
               ...
             </button>
@@ -296,6 +304,202 @@ export default function Projects() {
               </div>
             ) : null}
             {displayedOption === "5" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>SCIENTIFIC COMPUTING CERTIFICATION</legend>
+                  <p>
+                    The following <ins>5 Projects</ins> were created to achieve
+                    the Scientific Computing with Python certification from
+                    freeCodeCamp.
+                  </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/arithmetic-formatter"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 1 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Arithmetic Formatter </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    Create a function that receives a list of strings that are
+                    arithmetic problems and returns the problems arranged
+                    vertically and side-by-side. The function should optionally
+                    take a second argument. When the second argument is set to
+                    True, the answers should be displayed.
+                  </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/time-calculator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 2 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Time Calculator </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    {`Write a function named 'add_time' that takes in two required parameters and one optional parameter:`}
+                  </p>
+                  <br />
+                  <ul>
+                    <li>
+                      - a start time in the 12-hour clock format (ending in AM
+                      or PM)
+                    </li>
+                    <li>
+                      - a duration time that indicates the number of hours and
+                      minutes
+                    </li>
+                    <li>
+                      - (optional) a starting day of the week, case insensitive
+                    </li>
+                  </ul>
+                  <br />
+                  <p>
+                    {`The function should add the duration time to the start time
+                    and return the result. If the result will be the next day,
+                    it should show (next day) after the time. If the result will
+                    be more than one day later, it should show (n days later)
+                    after the time, where "n" is the number of days later. If
+                    the function is given the optional starting day of the week
+                    parameter, then the output should display the day of the
+                    week of the result. The day of the week in the output should
+                    appear after the time and before the number of days later.`}
+                  </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/budget-app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 3 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Budget App </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    Create a class that contained the following methods:
+                    deposit, withdraw, get_balance, transfer and check_funds.
+                    When the budget object is printed it should display: A title
+                    line of 30 characters where the name of the category is
+                    centred in a line of * characters. A list of the items in
+                    the ledger. Each line should show the description and
+                    amount. The first 23 characters of the description should be
+                    displayed, then the amount. The amount should be right
+                    aligned, contain two decimal places, and display a maximum
+                    of 7 characters. A line displaying the category total.
+                  </p>
+                  <br />
+                  <p>
+                    Besides the Category class, create a function (outside of
+                    the class) called create_spend_chart that takes a list of
+                    categories as an argument. It should return a string that is
+                    a bar chart. The chart should show the percentage spent in
+                    each category passed in to the function.
+                  </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/polygon-area-calculator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 4 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Polygon Area Calculator </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    In this project you will use object oriented programming to
+                    create a Rectangle class and a Square class. The Square
+                    class should be a subclass of Rectangle and inherit methods
+                    and attributes.
+                  </p>
+                  <br />
+                  <p>
+                    When a Rectangle object is created, it should be initialized
+                    with width and height attributes. The class should also
+                    contain various additional methods (such as
+                    get_amount_inside).
+                  </p>
+                  <p>
+                    When a Square object is created a single side length is
+                    passed in. The __init__ method should store the side length
+                    in both the width and height attributes from the Rectangle
+                    class. The Square class should be able to access the
+                    Rectangle class methods but should also contain a set_side
+                    method.
+                  </p>
+                  <br />
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/probability-calculator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project 5 Repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">Python.</p>
+                  </div>
+                  <br />
+                  <ins> Probability Calculator </ins>
+                  <br />
+                  <br />
+                  <mark>The Brief</mark>
+                  <p>
+                    Suppose there is a hat containing 5 blue balls, 4 red balls,
+                    and 2 green balls. What is the probability that a random
+                    draw of 4 balls will contain at least 1 red ball and 2 green
+                    balls? While it would be possible to calculate the
+                    probability using advanced mathematics, an easier way is to
+                    write a program to perform a large number of experiments to
+                    estimate an approximate probability. For this project, you
+                    will write a program to determine the approximate
+                    probability of drawing certain balls randomly from a hat.
+                  </p>
+                  <br />
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "6" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
                   <legend>COMING SOON</legend>

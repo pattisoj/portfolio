@@ -35,14 +35,23 @@
 }
 
 .projects-options{
+    height: 47vh;
     width: 20vw;
     padding: 0.5rem;
-    padding-bottom: 10vh;
+    overflow-y: scroll;
     display: grid;
     margin-top: 1vh;
     margin-bottom: 1vh;
     background-color: #dcd8c0;
     box-shadow: 0.1rem 0.1rem #454138;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects-options::-webkit-scrollbar {
+display: none;
 }
 
 .projects-info-content-container{
@@ -150,12 +159,17 @@
     .projects-options{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         padding: .5rem;
-        height: fit-content;
+        height: 7vh;
         width: 80vw;
         font-size: .5rem;
-        padding: .5rem;
+        overflow-x: scroll;
+    }
+
+    .about-option-button{
+        width: fit-content;
+        white-space: nowrap;
     }
 
     .projects-info-content-container{
