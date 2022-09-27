@@ -42,6 +42,12 @@ describe("Projects Page", () => {
     cy.get(".projects-options > :nth-child(5)").click();
     cy.get(".projects-info-content > legend").should(
       "have.text",
+      "SCIENTIFIC COMPUTING CERTIFICATION"
+    );
+
+    cy.get(".projects-options > :nth-child(6)").click();
+    cy.get(".projects-info-content > legend").should(
+      "have.text",
       "COMING SOON"
     );
   });

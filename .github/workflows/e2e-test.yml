@@ -1,0 +1,21 @@
+name: E2E Test
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install --frozen-lockfile
+      - name: E2E Tests
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          build: npm run build
+          start: npm start
+          wait-on: "http://localhost:3000"
