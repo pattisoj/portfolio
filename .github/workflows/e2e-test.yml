@@ -14,7 +14,8 @@ jobs:
       - name: Install Dependencies
         run: npm install --frozen-lockfile
       - name: E2E Tests
-        uses: cypress-io/github-action@v3.0.3
+        uses: cypress-io/github-action@v4.2.0
         with:
-          start: npm run dev
+          build: npm run build
+          start: npm start
           wait-on: "http://localhost:3000"
