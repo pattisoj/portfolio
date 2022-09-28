@@ -43,7 +43,7 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("2")}
             >
-              Npm package.
+              My Hero Academia API.
             </button>
             <button
               className={`about-option-button ${
@@ -75,7 +75,7 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("6")}
             >
-              My Hero Academia API.
+              NPM Package.
             </button>
             <button
               className={`about-option-button ${
@@ -101,10 +101,10 @@ export default function Projects() {
             {displayedOption === "2" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
-                  <legend>JPSTRING</legend>
+                  <legend>MY HERO ACADEMIA API</legend>
                   <div className="projects-buttons">
                     <a
-                      href="https://github.com/pattisoj/jpString"
+                      href="https://github.com/pattisoj/my-hero-academia-api"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -114,49 +114,19 @@ export default function Projects() {
                     <p>-</p>
                     <br />
                     <a
-                      href="https://www.npmjs.com/package/jp-string"
+                      href="https://myheroacademia-api.herokuapp.com/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      View on npm.
+                      View the live site.
                     </a>
                     <br />
                     <p>-</p>
                     <br />
-                    <p className="languages">JavaScript. Jest.</p>
+                    <p className="languages">
+                      JavaScript. Node.js. Express.js. Heroku. Jest.
+                    </p>
                   </div>
-                  <br />
-                  <p>An NPM string manipulation package.</p>
-                  <br />
-                  <mark>
-                    This is an open source project that anyone can contribute
-                    to.
-                  </mark>
-                  <br />
-                  <br />
-                  <p>
-                    <ins>
-                      I created this NPM package as a learning opportunity.
-                    </ins>
-                    <br />I wanted to experience and learn about the creation of
-                    a public package.
-                    <br /> I also wanted to{" "}
-                    <mark>learn about CI/CD pipelines</mark> and this project
-                    was my first experience of it. I was able to create a GitHub
-                    workflow that runs all tests on a push or pull request and
-                    if they pass is able to automatically publish to npm if the
-                    version is updated! This facilitated the addition of a CI/CD
-                    pipeline to my final project where I additionally
-                    experimented with running ESLint on a pull request!
-                  </p>
-                  <br />
-                  <p>
-                    I chose a string manipulation package as I felt it gave me
-                    the most opportunities to keep adding functionality. I wrote
-                    all of the methods and tests in the library and all of the
-                    documentation. <br />
-                    <mark>This library is fully tested (100% coverage).</mark>
-                  </p>
                 </fieldset>
               </div>
             ) : null}
@@ -510,10 +480,10 @@ export default function Projects() {
             {displayedOption === "6" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
-                  <legend>MY HERO ACADEMIA API</legend>
+                  <legend>JPSTRING</legend>
                   <div className="projects-buttons">
                     <a
-                      href="https://github.com/pattisoj/my-hero-academia-api"
+                      href="https://github.com/pattisoj/jpString"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -523,19 +493,49 @@ export default function Projects() {
                     <p>-</p>
                     <br />
                     <a
-                      href="https://myheroacademia-api.herokuapp.com/"
+                      href="https://www.npmjs.com/package/jp-string"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      View the live site.
+                      View on npm.
                     </a>
                     <br />
                     <p>-</p>
                     <br />
-                    <p className="languages">
-                      JavaScript. Node.js. Express.js. Heroku. Jest.
-                    </p>
+                    <p className="languages">JavaScript. Jest.</p>
                   </div>
+                  <br />
+                  <p>An NPM string manipulation package.</p>
+                  <br />
+                  <mark>
+                    This is an open source project that anyone can contribute
+                    to.
+                  </mark>
+                  <br />
+                  <br />
+                  <p>
+                    <ins>
+                      I created this NPM package as a learning opportunity.
+                    </ins>
+                    <br />I wanted to experience and learn about the creation of
+                    a public package.
+                    <br /> I also wanted to{" "}
+                    <mark>learn about CI/CD pipelines</mark> and this project
+                    was my first experience of it. I was able to create a GitHub
+                    workflow that runs all tests on a push or pull request and
+                    if they pass is able to automatically publish to npm if the
+                    version is updated! This facilitated the addition of a CI/CD
+                    pipeline to my final project where I additionally
+                    experimented with running ESLint on a pull request!
+                  </p>
+                  <br />
+                  <p>
+                    I chose a string manipulation package as I felt it gave me
+                    the most opportunities to keep adding functionality. I wrote
+                    all of the methods and tests in the library and all of the
+                    documentation. <br />
+                    <mark>This library is fully tested (100% coverage).</mark>
+                  </p>
                 </fieldset>
               </div>
             ) : null}
