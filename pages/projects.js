@@ -571,9 +571,9 @@ export default function Projects() {
         </fieldset>
         <div className="about-footer">
           <blockquote className="about-blockquote">
-            {`After completing the School of Code I have continued my learning on
-            freeCodeCamp. I am currently working to my first certification
-            "Scientific Computing with Python".  I am also working on some projects with other bootcampers. To keep up to date with the progress of these projects head over to my github.`}
+            {`After completing the School of Code I continued my learning on
+            freeCodeCamp, I completed the
+            "Scientific Computing with Python" certification.  I am working on some personal projects and continuing my learning - focusing on cloud computing. To keep up to date with the progress of these projects and to see anything else I am working on head over to my github.`}
             <cite className="about-cite">
               <a href="https://github.com/pattisoj">GitHub</a>
             </cite>
