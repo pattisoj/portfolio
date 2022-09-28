@@ -43,7 +43,7 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("2")}
             >
-              Npm package.
+              My Hero Academia API.
             </button>
             <button
               className={`about-option-button ${
@@ -75,6 +75,14 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("6")}
             >
+              NPM Package.
+            </button>
+            <button
+              className={`about-option-button ${
+                "7" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("7")}
+            >
               ...
             </button>
           </div>
@@ -93,10 +101,10 @@ export default function Projects() {
             {displayedOption === "2" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
-                  <legend>JPSTRING</legend>
+                  <legend>MY HERO ACADEMIA API</legend>
                   <div className="projects-buttons">
                     <a
-                      href="https://github.com/pattisoj/jpString"
+                      href="https://github.com/pattisoj/my-hero-academia-api"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -106,19 +114,21 @@ export default function Projects() {
                     <p>-</p>
                     <br />
                     <a
-                      href="https://www.npmjs.com/package/jp-string"
+                      href="https://myheroacademia-api.herokuapp.com/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      View on npm.
+                      View the live site.
                     </a>
                     <br />
                     <p>-</p>
                     <br />
-                    <p className="languages">JavaScript. Jest.</p>
+                    <p className="languages">
+                      JavaScript. Node.js. Express.js. Heroku. Jest.
+                    </p>
                   </div>
                   <br />
-                  <p>An NPM string manipulation package.</p>
+                  <p>{`A fan-made API for the anime series "My Hero Academia".`}</p>
                   <br />
                   <mark>
                     This is an open source project that anyone can contribute
@@ -126,28 +136,25 @@ export default function Projects() {
                   </mark>
                   <br />
                   <br />
+                  <p>{`I really enjoy anime and one of my recent favorites has been My Hero Academia, I decided I wanted to create something for it and for it's fan base so I decided to create this API.`}</p>
+                  <br />
                   <p>
-                    <ins>
-                      I created this NPM package as a learning opportunity.
-                    </ins>
-                    <br />I wanted to experience and learn about the creation of
-                    a public package.
-                    <br /> I also wanted to{" "}
-                    <mark>learn about CI/CD pipelines</mark> and this project
-                    was my first experience of it. I was able to create a GitHub
-                    workflow that runs all tests on a push or pull request and
-                    if they pass is able to automatically publish to npm if the
-                    version is updated! This facilitated the addition of a CI/CD
-                    pipeline to my final project where I additionally
-                    experimented with running ESLint on a pull request!
+                    Currently there is character data for 40 characters. These
+                    are all of the students in Class-1A and Class-1B.
+                  </p>
+                  <br />
+                  <ins>Endpoints</ins>
+                  <p>- Characters</p>
+                  <br />
+                  <ins>Example use case</ins>
+                  <p>
+                    curl https://myheroacademia-api.herokuapp.com/characters
                   </p>
                   <br />
                   <p>
-                    I chose a string manipulation package as I felt it gave me
-                    the most opportunities to keep adding functionality. I wrote
-                    all of the methods and tests in the library and all of the
-                    documentation. <br />
-                    <mark>This library is fully tested (100% coverage).</mark>
+                    This project is currently being worked on <mark>daily</mark>{" "}
+                    I would highly recommend checking out the project repository
+                    for the most up to date information!
                   </p>
                 </fieldset>
               </div>
@@ -502,6 +509,68 @@ export default function Projects() {
             {displayedOption === "6" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
+                  <legend>JPSTRING</legend>
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/jpString"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <a
+                      href="https://www.npmjs.com/package/jp-string"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View on npm.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">JavaScript. Jest.</p>
+                  </div>
+                  <br />
+                  <p>An NPM string manipulation package.</p>
+                  <br />
+                  <mark>
+                    This is an open source project that anyone can contribute
+                    to.
+                  </mark>
+                  <br />
+                  <br />
+                  <p>
+                    <ins>
+                      I created this NPM package as a learning opportunity.
+                    </ins>
+                    <br />I wanted to experience and learn about the creation of
+                    a public package.
+                    <br /> I also wanted to{" "}
+                    <mark>learn about CI/CD pipelines</mark> and this project
+                    was my first experience of it. I was able to create a GitHub
+                    workflow that runs all tests on a push or pull request and
+                    if they pass is able to automatically publish to npm if the
+                    version is updated! This facilitated the addition of a CI/CD
+                    pipeline to my final project where I additionally
+                    experimented with running ESLint on a pull request!
+                  </p>
+                  <br />
+                  <p>
+                    I chose a string manipulation package as I felt it gave me
+                    the most opportunities to keep adding functionality. I wrote
+                    all of the methods and tests in the library and all of the
+                    documentation. <br />
+                    <mark>This library is fully tested (100% coverage).</mark>
+                  </p>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "7" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
                   <legend>COMING SOON</legend>
                   <p>This space is empty for now...</p>
                   <p>
@@ -531,9 +600,9 @@ export default function Projects() {
         </fieldset>
         <div className="about-footer">
           <blockquote className="about-blockquote">
-            {`After completing the School of Code I have continued my learning on
-            freeCodeCamp. I am currently working to my first certification
-            "Scientific Computing with Python".  I am also working on some projects with other bootcampers. To keep up to date with the progress of these projects head over to my github.`}
+            {`After completing the School of Code I continued my learning on
+            freeCodeCamp, I completed the
+            "Scientific Computing with Python" certification.  I am working on some personal projects and continuing my learning - focusing on cloud computing. To keep up to date with the progress of these projects and to see anything else I am working on head over to my github.`}
             <cite className="about-cite">
               <a href="https://github.com/pattisoj">GitHub</a>
             </cite>

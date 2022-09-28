@@ -25,7 +25,10 @@ describe("Projects Page", () => {
 
   it("should show correct content on button click", () => {
     cy.get(".projects-options > :nth-child(2)").click();
-    cy.get(".projects-info-content > legend").should("have.text", "JPSTRING");
+    cy.get(".projects-info-content > legend").should(
+      "have.text",
+      "MY HERO ACADEMIA API"
+    );
 
     cy.get(".projects-options > :nth-child(3)").click();
     cy.get(".projects-info-content > legend").should(
@@ -46,6 +49,9 @@ describe("Projects Page", () => {
     );
 
     cy.get(".projects-options > :nth-child(6)").click();
+    cy.get(".projects-info-content > legend").should("have.text", "JPSTRING");
+
+    cy.get(".projects-options > :nth-child(7)").click();
     cy.get(".projects-info-content > legend").should(
       "have.text",
       "COMING SOON"
