@@ -127,6 +127,35 @@ export default function Projects() {
                       JavaScript. Node.js. Express.js. Heroku. Jest.
                     </p>
                   </div>
+                  <br />
+                  <p>{`A fan-made API for the anime series "My Hero Academia".`}</p>
+                  <br />
+                  <mark>
+                    This is an open source project that anyone can contribute
+                    to.
+                  </mark>
+                  <br />
+                  <br />
+                  <p>{`I really enjoy anime and one of my recent favorites has been My Hero Academia, I decided I wanted to create something for it and for it's fan base so I decided to create this API.`}</p>
+                  <br />
+                  <p>
+                    Currently there is character data for 40 characters. These
+                    are all of the students in Class-1A and Class-1B.
+                  </p>
+                  <br />
+                  <ins>Endpoints</ins>
+                  <p>- Characters</p>
+                  <br />
+                  <ins>Example use case</ins>
+                  <p>
+                    curl https://myheroacademia-api.herokuapp.com/characters
+                  </p>
+                  <br />
+                  <p>
+                    This project is currently being worked on <mark>daily</mark>{" "}
+                    I would highly recommend checking out the project repository
+                    for the most up to date information!
+                  </p>
                 </fieldset>
               </div>
             ) : null}
