@@ -75,6 +75,14 @@ export default function Projects() {
               }`}
               onClick={() => handleClick("6")}
             >
+              My Hero Academia API.
+            </button>
+            <button
+              className={`about-option-button ${
+                "7" === displayedOption ? "active" : ""
+              }`}
+              onClick={() => handleClick("7")}
+            >
               ...
             </button>
           </div>
@@ -500,6 +508,38 @@ export default function Projects() {
               </div>
             ) : null}
             {displayedOption === "6" ? (
+              <div className="projects-info-content-container">
+                <fieldset className="projects-info-content">
+                  <legend>MY HERO ACADEMIA API</legend>
+                  <div className="projects-buttons">
+                    <a
+                      href="https://github.com/pattisoj/my-hero-academia-api"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Project repository.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <a
+                      href="https://myheroacademia-api.herokuapp.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View the live site.
+                    </a>
+                    <br />
+                    <p>-</p>
+                    <br />
+                    <p className="languages">
+                      JavaScript. Node.js. Express.js. Heroku. Jest.
+                    </p>
+                  </div>
+                </fieldset>
+              </div>
+            ) : null}
+            {displayedOption === "7" ? (
               <div className="projects-info-content-container">
                 <fieldset className="projects-info-content">
                   <legend>COMING SOON</legend>
