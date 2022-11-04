@@ -31,7 +31,7 @@ export default function Home() {
                 School of Code 16 week bootcamp. <br /> I pride myself in
                 developing well tested and high quality software. <br /> I am
                 always looking to learn new things so I am currently learning
-                Python!
+                about Docker and developing my own API!
               </p>
               <br />
               <p>Welcome to my website.</p>
