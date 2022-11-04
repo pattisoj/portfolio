@@ -299,7 +299,7 @@ ins {
 
 .technologies-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style-type: disc;
 }
 
