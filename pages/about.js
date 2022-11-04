@@ -179,10 +179,11 @@ export default function About() {
                       <dd>HTML5.</dd>
                       <dd>CSS.</dd>
                       <dd>JavaScript.</dd>
+                      <dd>Python.</dd>
                       <dd>SQL.</dd>
                     </dl>
                     <dl>
-                      <dt>Libraries & Frameworks</dt>
+                      <dt>Libraries</dt>
                       <dd>Node.js.</dd>
                       <dd>React.</dd>
                       <dd>Express.js.</dd>
@@ -195,10 +196,12 @@ export default function About() {
                       <dd>Netlify.</dd>
                       <dd>AWS.</dd>
                       <dd>Vercel.</dd>
+                      <dd>Azure.</dd>
                     </dl>
                     <dl>
                       <dt>Testing</dt>
                       <dd>Jest.</dd>
+                      <dd>PyTest.</dd>
                       <dd>Cypress.</dd>
                       <dd>Postman.</dd>
                     </dl>
@@ -206,6 +209,7 @@ export default function About() {
                       <dt>Databases</dt>
                       <dd>PostgreSQL.</dd>
                       <dd>DynamoDB.</dd>
+                      <dd>MongoDB.</dd>
                     </dl>
                   </div>
                 </fieldset>
@@ -217,7 +221,7 @@ export default function About() {
                   <legend>EXPERIENCE</legend>
                   <mark>
                     Full Stack Development, The School of Code - Remote. April
-                    2022 - Present.
+                    2022 - August 2022.
                   </mark>
                   <br />
                   <p>
