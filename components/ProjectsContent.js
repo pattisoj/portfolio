@@ -1,10 +1,9 @@
-export default function ProjectsContent({
-  displayedOption,
-  setDisplayedOption,
-}) {
+import data from "../data/projectsData.json";
+
+export default function ProjectsContent({ displayedOption }) {
   return (
     <div className="projects-info-display">
-      {displayedOption === "1" ? (
+      {displayedOption === 1 ? (
         <div className="projects-info-content-container">
           <fieldset className="projects-info-content">
             <legend>WELCOME</legend>
@@ -15,6 +14,47 @@ export default function ProjectsContent({
           </fieldset>
         </div>
       ) : null}
+
+      {data.map((content, index) => (
+        <>
+          {displayedOption == index + 2 ? (
+            <div className="projects-info-content-container">
+              <fieldset className="projects-info-content">
+                <legend>{content.legend}</legend>
+                <div className="projects-buttons">
+                  {content.buttons.map((button, index) => (
+                    <>
+                      <a href={button.link} target="_blank" rel="noreferrer">
+                        {button.title}
+                      </a>
+                      <br />
+                      {index + 1 === content.buttons.length ? null : <p>-</p>}
+                    </>
+                  ))}
+                </div>
+                <br />
+                <p>{content.title}</p>
+                <br />
+                <mark>{content.hook}</mark>
+                <br />
+                <br />
+                {content.content.map((section, index) => (
+                  <>
+                    {section.title ? <ins>{section.title}</ins> : null}
+                    {section.content ? <p>{section.content}</p> : null}
+                    {section.subcontent ? (
+                      <>
+                        <br /> <p>{section.subcontent}</p>
+                      </>
+                    ) : null}
+                    {index + 1 === content.content.length ? null : <br />}
+                  </>
+                ))}
+              </fieldset>
+            </div>
+          ) : null}
+        </>
+      ))}
     </div>
   );
 }
