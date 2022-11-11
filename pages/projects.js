@@ -11,7 +11,7 @@ import ContentOptions from "../components/ContentOptions";
 import ProjectsContent from "../components/ProjectsContent";
 
 export default function Projects() {
-  const [displayedOption, setDisplayedOption] = useState("1");
+  const [displayedOption, setDisplayedOption] = useState(1);
 
   return (
     <>
@@ -30,10 +30,7 @@ export default function Projects() {
             displayedOption={displayedOption}
             setDisplayedOption={setDisplayedOption}
           />
-          <ProjectsContent
-            displayedOption={displayedOption}
-            setDisplayedOption={setDisplayedOption}
-          />
+          <ProjectsContent displayedOption={displayedOption} />
 
           <div className="projects-icons">
             <Image alt="phoenix icon" src={Phoenix} height={100} width={100} />
