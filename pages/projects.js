@@ -7,14 +7,11 @@ import { useState } from "react";
 import NavBar from "../components/NavBar.js";
 import PageNumber from "../components/PageNumber";
 import LogoBar from "../components/LogoBar.js";
+import ContentOptions from "../components/ContentOptions";
+import ProjectsContent from "../components/ProjectsContent";
 
 export default function Projects() {
   const [displayedOption, setDisplayedOption] = useState("1");
-
-  function handleClick(option) {
-    // console.log(`Clicked on project number ${option}`);
-    setDisplayedOption(option);
-  }
 
   return (
     <>
@@ -28,8 +25,16 @@ export default function Projects() {
         <h1 className="projects-title">PROJECTS</h1>
         <fieldset className="projects-info">
           <legend>Josh Pattison Projects</legend>
-          <div className="projects-options"></div>
-          <div className="projects-info-display"></div>
+
+          <ContentOptions
+            displayedOption={displayedOption}
+            setDisplayedOption={setDisplayedOption}
+          />
+          <ProjectsContent
+            displayedOption={displayedOption}
+            setDisplayedOption={setDisplayedOption}
+          />
+
           <div className="projects-icons">
             <Image alt="phoenix icon" src={Phoenix} height={100} width={100} />
             <Image alt="robots icon" src={Robots} height={100} width={100} />
