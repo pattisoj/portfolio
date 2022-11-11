@@ -6,5 +6,16 @@ export default function ContentOptions({
     setDisplayedOption(option);
   }
 
-  return <div className="projects-options"></div>;
+  return (
+    <div className="projects-options">
+      <button
+        className={`about-option-button ${
+          "1" === displayedOption ? "active" : ""
+        }`}
+        onClick={() => handleClick("1")}
+      >
+        Welcome.
+      </button>
+    </div>
+  );
 }
