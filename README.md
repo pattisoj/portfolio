@@ -5,7 +5,7 @@
 <h1 align="center"><img src="https://cdn3.emoji.gg/emojis/9247-bluebutterflywingleft.png" width="32px" height="32px" alt="BlueButterflyWingLeft"> joshpattison.com - portfolio <img src="https://cdn3.emoji.gg/emojis/9247-bluebutterflywingright.png" width="32px" height="32px" alt="BlueButterflyWingRight"></h1>
 
 <p align="center">
-  My personal portfolio <a href="https://joshpattison.com" target="_blank">joshpattison.com</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, CSS 3 and deployed on <a href="https://vercel.com/" target="_blank"> Vercel</a>.
+  My personal portfolio <a href="https://joshpattison.com" target="_blank">joshpattison.com</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, CSS 3, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> and deployed on <a href="https://vercel.com/" target="_blank"> Vercel</a>.
 </p>
 
 <div align="center">
@@ -81,7 +81,7 @@ The inspiration for my home pages comes from various software developer portfoli
 
 I wanted to bring my love for anime/manga to my portfolio but wanted to do it in a stylized and clean way. I felt that the art from [Studio Ghibli](http://ghiblicollection.com/) was a perfect fit. I used the beautiful imagery from Spirited Away to make a home page I am happy with!
 
-This current itteration of my homepage was actually the last thing I built for this portfolio. This means much of the inspiration comes from my other pages as I tried to keep a somewhat consistent style. My original homepage was completley different and can be viewed on the [home-page-V1 branch](https://github.com/pattisoj/portfolio/tree/home-page-V1) of this repository.
+This current iteration of my homepage was actually the last thing I built for this portfolio. This means much of the inspiration comes from my other pages as I tried to keep a somewhat consistent style. My original homepage was completely different and can be viewed on the [home-page-V1 branch](https://github.com/pattisoj/portfolio/tree/home-page-V1) of this repository.
 
 #### Homepage takeaway
 
