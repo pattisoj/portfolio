@@ -22,22 +22,38 @@ export default function ProjectsContent({ displayedOption }) {
               <fieldset className="projects-info-content">
                 <legend>{content.legend}</legend>
                 <div className="projects-buttons">
-                  {content.buttons.map((button, index) => (
-                    <>
-                      <a href={button.link} target="_blank" rel="noreferrer">
-                        {button.title}
-                      </a>
-                      <br />
-                      {index + 1 === content.buttons.length ? null : <p>-</p>}
-                    </>
-                  ))}
+                  {content.buttons
+                    ? content.buttons.map((button, index) => (
+                        <>
+                          <a
+                            href={button.link}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {button.title}
+                          </a>
+                          <br />
+                          {index + 1 === content.buttons.length ? null : (
+                            <p>-</p>
+                          )}
+                        </>
+                      ))
+                    : null}
                 </div>
                 <br />
-                <p>{content.title}</p>
-                <br />
-                <mark>{content.hook}</mark>
-                <br />
-                <br />
+                {content.title ? (
+                  <>
+                    <p>{content.title}</p>
+                    <br />
+                  </>
+                ) : null}
+                {content.hook ? (
+                  <>
+                    <mark>{content.hook}</mark>
+                    <br />
+                    <br />
+                  </>
+                ) : null}
                 {content.content.map((section, index) => (
                   <>
                     {section.title ? <ins>{section.title}</ins> : null}
