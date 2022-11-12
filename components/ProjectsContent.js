@@ -41,6 +41,11 @@ export default function ProjectsContent({ displayedOption }) {
                 {content.content.map((section, index) => (
                   <>
                     {section.title ? <ins>{section.title}</ins> : null}
+                    {section.mark ? (
+                      <>
+                        <br /> <mark>{section.mark}</mark>{" "}
+                      </>
+                    ) : null}
                     {section.content ? <p>{section.content}</p> : null}
                     {section.subcontent ? (
                       <>
