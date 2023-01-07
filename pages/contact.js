@@ -59,13 +59,13 @@ export default function Contact() {
                 </a>
               </p>
               <p className="contact-p">
-                Once in a while I blog -{" "}
+                I enjoy films and write reviews here -{" "}
                 <a
-                  href="https://pattisoj.hashnode.dev/"
+                  href="https://letterboxd.com/_joshpattison/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  pattisoj.hashnode.dev
+                  letterboxd.com/_joshpattison/
                 </a>
               </p>
             </div>
