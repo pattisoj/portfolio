@@ -66,7 +66,7 @@ describe("Contact Page", () => {
     cy.get(".contact-links-container > :nth-child(5) > a").should(
       "have.attr",
       "href",
-      "https://pattisoj.hashnode.dev/"
+      "https://letterboxd.com/_joshpattison/"
     );
   });
 });
