@@ -28,7 +28,7 @@ describe("Contact Page", () => {
 
     cy.get(".contact-links-container > :nth-child(5)").should(
       "have.text",
-      "Once in a while I blog - pattisoj.hashnode.dev"
+      "I enjoy films and write reviews here - letterboxd.com/_joshpattison/"
     );
   });
 
