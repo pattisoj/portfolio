@@ -157,8 +157,8 @@ export default function About() {
                   </p>
                   <br />
                   <p>
-                    Currently I am looking for junior software development
-                    roles,{" "}
+                    This has helped me secure my first role in tech! If you want
+                    to reach out{" "}
                     <mark>
                       contact me on my{" "}
                       <a href="https://joshpattison.com/contact">
