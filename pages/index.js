@@ -27,11 +27,11 @@ export default function Home() {
                 problems.
               </p>
               <p className="home-p">
-                I achieved a BSc in Psychology and recently graduated from the
-                School of Code 16 week bootcamp. <br /> I pride myself in
-                developing well tested and high quality software. <br /> I am
-                always looking to learn new things so I am currently learning
-                about Docker and developing my own API!
+                I achieved a BSc in Psychology, graduated from the School of
+                Code bootcamp and recently secured my first role in tech. <br />{" "}
+                I pride myself in developing well tested and high quality
+                software. <br /> I am always looking to learn new things so I am
+                currently learning about Docker and AI.
               </p>
               <br />
               <p>Welcome to my website.</p>

@@ -157,8 +157,8 @@ export default function About() {
                   </p>
                   <br />
                   <p>
-                    Currently I am looking for junior software development
-                    roles,{" "}
+                    This has helped me secure my first role in tech! If you want
+                    to reach out{" "}
                     <mark>
                       contact me on my{" "}
                       <a href="https://joshpattison.com/contact">
@@ -219,6 +219,13 @@ export default function About() {
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
                   <legend>EXPERIENCE</legend>
+                  <mark>First Tech Role - Coming Soon. March 2023 -</mark>
+                  <br />
+                  <p>
+                    I have accepted my first tech role and I am excited to get
+                    started!
+                  </p>
+                  <br />
                   <mark>
                     Full Stack Development, The School of Code - Remote. April
                     2022 - August 2022.
