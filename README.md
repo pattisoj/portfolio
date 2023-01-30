@@ -11,6 +11,9 @@
 <div align="center">
 
 ![Vercel](https://vercelbadge.vercel.app/api/pattisoj/portfolio)
+![Stars](https://img.shields.io/github/stars/pattisoj/portfolio?style=flat)
+![Forks](https://img.shields.io/github/forks/pattisoj/portfolio?style=flat)
+
 
 </div>
 
