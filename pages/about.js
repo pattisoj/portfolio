@@ -219,7 +219,10 @@ export default function About() {
               <div className="about-info-content-container">
                 <fieldset className="about-info-content">
                   <legend>EXPERIENCE</legend>
-                  <mark>First Tech Role - Coming Soon. March 2023 -</mark>
+                  <mark>
+                    First Tech Role - BJSS Graduate Software Engineer. March
+                    2023
+                  </mark>
                   <br />
                   <p>
                     I have accepted my first tech role and I am excited to get
