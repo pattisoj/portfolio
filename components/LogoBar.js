@@ -2,7 +2,7 @@ import Email from "../images/logo/email.svg";
 import GitHub from "../images/logo/github.svg";
 import LinkedIn from "../images/logo/linkedin.svg";
 import Twitter from "../images/logo/twitter.svg";
-import Hashnode from "../images/logo/hashnode.svg";
+import Letterboxd from "../images/logo/letterboxd.svg";
 
 export default function LogoBar({ id }) {
   return (
@@ -44,11 +44,11 @@ export default function LogoBar({ id }) {
       </div>
       <div className="transition duration-300 hover:scale-150 hover:-translate-x-1.5 hover:fill-[#f8edeb]">
         <a
-          href="https://pattisoj.hashnode.dev/"
+          href="https://letterboxd.com/_joshpattison/"
           target="_blank"
           rel="noreferrer"
         >
-          <Hashnode className="w-5 h-5" />
+          <Letterboxd className="w-5 h-5" />
         </a>
       </div>
     </div>
