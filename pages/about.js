@@ -111,7 +111,7 @@ export default function About() {
                         <input
                           className="profile-input"
                           type="text"
-                          placeholder="Twenty Two Years."
+                          placeholder="Twenty Three Years."
                           disabled
                         />
                       </p>
