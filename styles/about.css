@@ -65,6 +65,7 @@ body {
     font-family: helvetica, sans-serif;
     letter-spacing: 0.03rem;
     font-weight: lighter;
+    overflow: scroll;
 }
 
 .about-icons{
