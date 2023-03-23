@@ -71,6 +71,11 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects-options::-webkit-scrollbar {
+    display: none;
+    }
+
 .about-icons{
     height: 48vh;
     margin-left: 4vw;
