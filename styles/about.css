@@ -65,7 +65,10 @@ body {
     font-family: helvetica, sans-serif;
     letter-spacing: 0.03rem;
     font-weight: lighter;
-    overflow: scroll;
+    overflow-y: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .about-icons{
